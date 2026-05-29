@@ -35,7 +35,14 @@
 			}
 			body {
 				font-family:
-					"Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+					"Inter",
+					system-ui,
+					-apple-system,
+					"Segoe UI",
+					Roboto,
+					Helvetica,
+					Arial,
+					sans-serif;
 				background: var(--bg);
 			}
 
@@ -246,10 +253,18 @@
 									<strong>Motivation:</strong> Initial access broker (IAB) activities, credential
 									theft, crypto-mining.
 								</li>
+								<li>
+									<strong>Why it works:</strong> npm installs often run in trusted build contexts
+									where developers have direct access to source code, tokens, and cloud credentials.
+								</li>
+								<li>
+									<strong>Operational pattern:</strong> The campaign combines typosquatting, package
+									automation, and postinstall-style execution to maximize reach.
+								</li>
 							</ul>
 							<p style="color: #475569">
 								Note: this campaign favored scale over stealth—mass publication increased chances of
-								accidental installs.
+								accidental installs and made manual moderation impractical.
 							</p>
 						</div>
 						<aside class="notes">
@@ -263,7 +278,11 @@
 							workstations or enterprise CI/CD pipelines, they harvest valuable credentials, AWS keys, and
 							proprietary source code. Once inside, they can deploy crypto-miners for passive income or
 							act as Initial Access Brokers, selling their footholds to ransomware gangs. The target isn't
-							the package itself, but the high-value developer who mistakenly downloads it.
+							the package itself, but the high-value developer who mistakenly downloads it. In practice,
+							this is dangerous because build agents and developer laptops often have broad access to
+							GitHub, cloud consoles, package registries, and signing systems. A single compromised
+							install can turn into source-code theft, secret exposure, and a foothold inside the CI/CD
+							chain.
 						</aside>
 					</section>
 				</section>
@@ -394,9 +413,12 @@
 							assets.
 						</aside>
 					</section>
+				</section>
+
+				<section>
 					<section>
 						<div class="slide-card">
-							<h2>3.1 What Changed in 2.0</h2>
+							<h2>4 What Changed in 2.0</h2>
 							<ul>
 								<li>
 									<strong>More automation:</strong> the campaign scaled package creation and delivery
@@ -428,7 +450,7 @@
 					</section>
 					<section>
 						<div class="slide-card">
-							<h2>3.2 Observed Attack Chain</h2>
+							<h2>Observed Attack Chain</h2>
 							<ul>
 								<li>
 									<strong>Package compromise:</strong> attackers modified publicly available npm
@@ -460,7 +482,7 @@
 					</section>
 					<section>
 						<div class="slide-card">
-							<h2>3.3 Detection and Response</h2>
+							<h2>Detection and Response</h2>
 							<ul>
 								<li>
 									<strong>Immediate actions:</strong> rotate exposed secrets, isolate affected agents,
@@ -491,11 +513,11 @@
 					</section>
 				</section>
 
-				<!-- 4. Auswirkungen & Schäden -->
+				<!-- 5. Auswirkungen & Schäden -->
 				<section>
 					<section>
 						<div class="slide-card">
-							<h2>4. Impact & Damages</h2>
+							<h2>5. Impact & Damages</h2>
 							<ul>
 								<li>
 									<strong>Technical Consequences:</strong>
@@ -503,6 +525,10 @@
 										<li>Deep network penetration through valid stolen credentials.</li>
 										<li>Compromised CI/CD pipelines (Subsequent downstream infection).</li>
 										<li>Potential supply chain propagation into production artifacts.</li>
+										<li>Account takeover through stolen npm, GitHub, or cloud tokens.</li>
+										<li>
+											Malicious commits, runners, or build steps can contaminate future releases.
+										</li>
 									</ul>
 								</li>
 								<li>
@@ -511,6 +537,13 @@
 										<li>Cost of rigorous Incident Response and forensics.</li>
 										<li>Potential extortion or IP theft.</li>
 										<li>Reputational destruction if downstream customers are affected.</li>
+										<li>
+											Operational downtime while keys, pipelines, and repositories are rebuilt.
+										</li>
+										<li>
+											Compliance and notification overhead if regulated data or secrets are
+											exposed.
+										</li>
 									</ul>
 								</li>
 							</ul>
@@ -526,16 +559,18 @@
 							engineer requires wiping hardware, rotating all organizational keys, auditing codebases, and
 							hiring costly forensic teams. If threat actors successfully steal intellectual property or
 							drop ransomware using this initial access, the financial loss and reputational destruction
-							could potentially cripple an organization long-term.
+							could potentially cripple an organization long-term. The practical impact is also
+							time-based: teams lose release velocity, trust in dependencies drops, and recovery work
+							often blocks normal product development for days or weeks.
 						</aside>
 					</section>
 				</section>
 
-				<!-- 5. Gegenmaßnahmen & Lessons Learned -->
+				<!-- 6. Gegenmaßnahmen & Lessons Learned -->
 				<section>
 					<section>
 						<div class="slide-card">
-							<h2>5. Countermeasures & Lessons Learned</h2>
+							<h2>6. Countermeasures & Lessons Learned</h2>
 							<ul>
 								<li>
 									<strong>Remediation:</strong>
@@ -543,6 +578,13 @@
 										<li>Automated threat hunting & prompt takedowns by the npm security team.</li>
 										<li>Immediate credential rotation for affected developers.</li>
 										<li>Full build artifact validation and re-signing.</li>
+										<li>
+											Rebuild compromised workstations and self-hosted runners from trusted
+											images.
+										</li>
+										<li>
+											Invalidate npm, GitHub, cloud, and SSO tokens tied to impacted identities.
+										</li>
 									</ul>
 								</li>
 								<li>
@@ -552,6 +594,14 @@
 										<li>Utilizing lockfiles (`package-lock.json`) and exact versioning.</li>
 										<li>Implementing Software Composition Analysis (SCA) scanners.</li>
 										<li>Enforcing npm code provenance and strict 2FA for publishers.</li>
+										<li>
+											Using branch protection, artifact signing, and least-privilege CI
+											identities.
+										</li>
+										<li>
+											Scanning egress paths and secrets regularly to reduce exfiltration
+											opportunities.
+										</li>
 									</ul>
 								</li>
 							</ul>
@@ -561,23 +611,25 @@
 							remediation, platforms like GitHub and npm have increased their automated malware detection,
 							tearing down malicious packages rapidly. However, if a developer is infected, the only
 							effective remediation is wiping the machine and rotating every single credential they had
-							access to. Prevention is more crucial. A critical Best Practice is to disable automatic
-							script execution by using the `--ignore-scripts` flag or setting it globally in your npm
-							config. This single software control nullifies the vast majority of typosquatting payloads.
-							Furthermore, strict adherence to lockfiles ensures dependency reproducibility without
-							fetching unexpected versions. The primary lesson learned here is paradigm-shifting: "Zero
-							Trust" must apply to open-source libraries. Developers cannot blindly trust their package
-							managers. Organizations must funnel external packages through internal vetted registries,
-							utilize SCA scanners, and mandate code provenance.
+							access to. In practice, response teams should treat endpoint reimaging, runner replacement,
+							and secret invalidation as mandatory, not optional. Prevention is more crucial. A critical
+							Best Practice is to disable automatic script execution by using the `--ignore-scripts` flag
+							or setting it globally in your npm config. This single software control nullifies the vast
+							majority of typosquatting payloads. Furthermore, strict adherence to lockfiles ensures
+							dependency reproducibility without fetching unexpected versions. The primary lesson learned
+							here is paradigm-shifting: "Zero Trust" must apply to open-source libraries. Developers
+							cannot blindly trust their package managers. Organizations must funnel external packages
+							through internal vetted registries, utilize SCA scanners, mandate code provenance, and limit
+							what build agents can reach on the network.
 						</aside>
 					</section>
 				</section>
 
-				<!-- 6. Fazit -->
+				<!-- 7. Fazit -->
 				<section>
 					<section>
 						<div class="slide-card">
-							<h2>6. Conclusion</h2>
+							<h2>7. Conclusion</h2>
 							<ul>
 								<li>
 									<strong>Summary of Key Points:</strong>
