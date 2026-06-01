@@ -530,7 +530,7 @@
 				border: 1px solid #e2e8f0;
 				border-radius: 6px;
 				padding: 2px;
-				box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 				font-family: "Inter", system-ui, sans-serif;
 				font-size: 0.72rem;
 				font-weight: 600;
@@ -540,7 +540,9 @@
 			.lang-toggle span {
 				padding: 4px 8px;
 				border-radius: 4px;
-				transition: background 0.15s, color 0.15s;
+				transition:
+					background 0.15s,
+					color 0.15s;
 				color: #94a3b8;
 			}
 			.lang-toggle span.active {
@@ -572,12 +574,17 @@
 						>
 					</h1>
 					<div class="hdivider" style="width: 12rem"></div>
-					<p class="subtitle" style="margin-top: 0.4rem" data-i18n="t_meta">Supply-Chain-Sicherheit · CVSS 9.3</p>
+					<p class="subtitle" style="margin-top: 0.4rem" data-i18n="t_meta">
+						Supply-Chain-Sicherheit · CVSS 9.3
+					</p>
 					<aside class="notes">
 						Willkommen. Heute sprechen wir über Shai-Hulud 2.0 – benannt nach dem Sandwurm aus Dune – einen
 						selbstreplizierenden Wurm, der im November 2025 das NPM-Ökosystem heimsuchte. Wir decken den
 						vollen Angriffsablauf ab, von der Infektion bis zu den Gegenmaßnahmen.
 					</aside>
+					<p style="margin-top: 2rem; font-size: 0.72rem; color: #94a3b8">
+						Präsentation von Thilo Kieninger, Joshua Albrecht &amp; Simon Ziegler
+					</p>
 				</section>
 
 				<!-- ═══════════════════════════════════════════
@@ -666,8 +673,12 @@
 						<div class="grid-2" style="margin-top: 1rem">
 							<div class="card-red">
 								<div class="meta-label" style="color: #f87171">CVSS v3.1</div>
-								<div class="card-value">9.3 – <span class="accent-red" data-i18n="s1_critical">Critical</span></div>
-								<div class="card-sub" data-i18n="s1_cvss_sub">Attack Vector: Network · Privileges Required: None</div>
+								<div class="card-value">
+									9.3 – <span class="accent-red" data-i18n="s1_critical">Critical</span>
+								</div>
+								<div class="card-sub" data-i18n="s1_cvss_sub">
+									Attack Vector: Network · Privileges Required: None
+								</div>
 							</div>
 						</div>
 
@@ -739,12 +750,18 @@
 							<div class="timeline-item">
 								<span class="tl-date">Sep 2025</span>
 								<div class="tl-title" data-i18n="s2_tl1_title">Erste Shai-Hulud-Welle entdeckt</div>
-								<div class="tl-desc" data-i18n="s2_tl1_desc">Initialer selbstreplizierender Wurm im NPM-Ökosystem</div>
+								<div class="tl-desc" data-i18n="s2_tl1_desc">
+									Initialer selbstreplizierender Wurm im NPM-Ökosystem
+								</div>
 							</div>
 							<div class="timeline-item">
 								<span class="tl-date">3. Nov 2025 · 02:14 UTC</span>
-								<div class="tl-title" data-i18n="s2_tl2_title">Zweitinfektion: <code>@ctrl/tinycolor</code> v3.4.1</div>
-								<div class="tl-desc" data-i18n="s2_tl2_desc">Populäres UI-Hilfspaket, ~2 Mio. wöchentliche Downloads</div>
+								<div class="tl-title" data-i18n="s2_tl2_title">
+									Zweitinfektion: <code>@ctrl/tinycolor</code> v3.4.1
+								</div>
+								<div class="tl-desc" data-i18n="s2_tl2_desc">
+									Populäres UI-Hilfspaket, ~2 Mio. wöchentliche Downloads
+								</div>
 							</div>
 							<div class="timeline-item">
 								<span class="tl-date">3. Nov – 6. Nov</span>
@@ -777,7 +794,9 @@
 						<div class="card-red card-row" style="margin-bottom: 0.7rem">
 							<span style="font-size: 1.2rem; flex-shrink: 0">🎯</span>
 							<div>
-								<div class="card-title" style="color: #f87171" data-i18n="s2b_comp_title">Kompromittierte Unternehmen</div>
+								<div class="card-title" style="color: #f87171" data-i18n="s2b_comp_title">
+									Kompromittierte Unternehmen
+								</div>
 								<div class="card-desc" data-i18n="s2b_comp_desc">
 									<strong>Zapier</strong>, <strong>ENS</strong> (Ethereum Name Service),
 									<strong>AsyncAPI</strong>, <strong>PostHog</strong>, <strong>Postman</strong>
@@ -788,7 +807,11 @@
 
 						<div style="display: flex; gap: 0.7rem; margin-bottom: 0.7rem">
 							<div class="card-blue" style="flex: 1">
-								<div class="meta-label" style="color: #38bdf8; margin-bottom: 0.3rem" data-i18n="s2b_leak_label">
+								<div
+									class="meta-label"
+									style="color: #38bdf8; margin-bottom: 0.3rem"
+									data-i18n="s2b_leak_label"
+								>
 									Pakete mit Secret Leakage
 								</div>
 								<ul>
@@ -801,13 +824,19 @@
 								</ul>
 							</div>
 							<div class="card-orange" style="flex: 1">
-								<div class="meta-label" style="color: #f97316; margin-bottom: 0.3rem" data-i18n="s2b_ioc_label">
+								<div
+									class="meta-label"
+									style="color: #f97316; margin-bottom: 0.3rem"
+									data-i18n="s2b_ioc_label"
+								>
 									Angriffsindikatoren
 								</div>
 								<ul>
 									<li data-i18n="s2b_ioc1">26.000+ GitHub-Repos erstellt</li>
-									<li data-i18n="s2b_ioc2">500+ bekannte kompromittierte Pakete</li>
-									<li data-i18n="s2b_ioc3">Repo-Beschreibung: <em>„Sha1-Hulud: The Second Coming"</em></li>
+									<li data-i18n="s2b_ioc2">400 - 1000 bekannte kompromittierte Pakete</li>
+									<li data-i18n="s2b_ioc3">
+										Repo-Beschreibung: <em>„Sha1-Hulud: The Second Coming"</em>
+									</li>
 									<li data-i18n="s2b_ioc4">Look-alike Paketnamen (Typosquatting)</li>
 									<li data-i18n="s2b_ioc5">Multi-Vendor-Bestätigung (Wiz, Aikido, Kodem)</li>
 								</ul>
@@ -833,13 +862,19 @@
 										<strong style="color: #0f0f23">Fortgeschrittene Bedrohungsgruppe</strong>,
 										wahrscheinlich staatlich gesponsert oder organisierte Cyberkriminalität
 									</li>
-									<li data-i18n="s2c_profil2">Tief gehende Kenntnisse der NPM-Internals und CI/CD-Workflows</li>
+									<li data-i18n="s2c_profil2">
+										Tief gehende Kenntnisse der NPM-Internals und CI/CD-Workflows
+									</li>
 									<li data-i18n="s2c_profil3">
 										Wurm-Code in mehreren Sprachen (<code>JS</code>, <code>Python</code>,
 										<code>Bash</code>)
 									</li>
-									<li data-i18n="s2c_profil4">Infrastruktur in Bulletproof-Hosting-Netzwerken (Osteuropa)</li>
-									<li data-i18n="s2c_profil5">Hoch automatisierte Repo-Erstellung &amp; Package-Publishing-Pipelines</li>
+									<li data-i18n="s2c_profil4">
+										Infrastruktur in Bulletproof-Hosting-Netzwerken (Osteuropa)
+									</li>
+									<li data-i18n="s2c_profil5">
+										Hoch automatisierte Repo-Erstellung &amp; Package-Publishing-Pipelines
+									</li>
 								</ul>
 							</div>
 							<div>
@@ -847,8 +882,12 @@
 								<div class="card-red card-row" style="margin-bottom: 0.6rem">
 									<span style="font-size: 1.1rem; flex-shrink: 0">🎯</span>
 									<div>
-										<div class="card-title" style="color: #f87171" data-i18n="s2c_motiv1_title">Primär: Credential Theft</div>
-										<div class="card-desc" data-i18n="s2c_motiv1_desc">Exfiltration von NPM-Tokens, AWS Keys, GitHub PATs</div>
+										<div class="card-title" style="color: #f87171" data-i18n="s2c_motiv1_title">
+											Primär: Credential Theft
+										</div>
+										<div class="card-desc" data-i18n="s2c_motiv1_desc">
+											Exfiltration von NPM-Tokens, AWS Keys, GitHub PATs
+										</div>
 									</div>
 								</div>
 								<div class="card-orange card-row" style="margin-bottom: 0.6rem">
@@ -857,7 +896,9 @@
 										<div class="card-title" style="color: #f97316" data-i18n="s2c_motiv2_title">
 											Sekundär: Backdoor-Installation
 										</div>
-										<div class="card-desc" data-i18n="s2c_motiv2_desc">Reverse Shell in ausgewählten Fortune-500-Targets</div>
+										<div class="card-desc" data-i18n="s2c_motiv2_desc">
+											Reverse Shell in ausgewählten Fortune-500-Targets
+										</div>
 									</div>
 								</div>
 								<div class="card-blue card-row">
@@ -866,7 +907,9 @@
 										<div class="card-title" style="color: #38bdf8" data-i18n="s2c_motiv3_title">
 											Tertiär: Reputation / Disruption
 										</div>
-										<div class="card-desc" data-i18n="s2c_motiv3_desc">Vertrauensschaden im Open-Source-Ökosystem</div>
+										<div class="card-desc" data-i18n="s2c_motiv3_desc">
+											Vertrauensschaden im Open-Source-Ökosystem
+										</div>
 									</div>
 								</div>
 							</div>
@@ -895,42 +938,59 @@
 								<div class="kc-num">1</div>
 								<div class="kc-body">
 									<div class="kc-title" data-i18n="s3_kc1_title">Initial Access</div>
-									<span data-i18n="s3_kc1_desc">Phishing → Maintainer-Account kompromittiert, NPM-Token gestohlen</span>
+									<span data-i18n="s3_kc1_desc"
+										>Phishing → Maintainer-Account kompromittiert, NPM-Token gestohlen</span
+									>
 								</div>
 							</div>
 							<div class="kc-step">
 								<div class="kc-num">2</div>
 								<div class="kc-body">
 									<div class="kc-title" data-i18n="s3_kc2_title">Execution</div>
-									<span data-i18n="s3_kc2_desc">Schadcode in <code>postinstall</code>-Hook injiziert; führt bei <code>npm install</code> automatisch aus</span>
+									<span data-i18n="s3_kc2_desc"
+										>Schadcode in <code>postinstall</code>-Hook injiziert; führt bei
+										<code>npm install</code> automatisch aus</span
+									>
 								</div>
 							</div>
 							<div class="kc-step">
 								<div class="kc-num">3</div>
 								<div class="kc-body">
 									<div class="kc-title" data-i18n="s3_kc3_title">Persistence</div>
-									<span data-i18n="s3_kc3_desc">Würmer schreiben eigene Publish-Routine in <code>package.json</code>; <code>prepare</code>-Script infiziert Dependencies</span>
+									<span data-i18n="s3_kc3_desc"
+										>Würmer schreiben eigene Publish-Routine in <code>package.json</code>;
+										<code>prepare</code>-Script infiziert Dependencies</span
+									>
 								</div>
 							</div>
 							<div class="kc-step">
 								<div class="kc-num">4</div>
 								<div class="kc-body">
 									<div class="kc-title" data-i18n="s3_kc4_title">Credential Access</div>
-									<span data-i18n="s3_kc4_desc">List <code>~/.npmrc</code>, <code>.env</code>, CI-Umgebungsvariablen; exfiltriert via HTTPS-POST</span>
+									<span data-i18n="s3_kc4_desc"
+										>List <code>~/.npmrc</code>, <code>.env</code>, CI-Umgebungsvariablen;
+										exfiltriert via HTTPS-POST</span
+									>
 								</div>
 							</div>
 							<div class="kc-step">
 								<div class="kc-num">5</div>
 								<div class="kc-body">
 									<div class="kc-title" data-i18n="s3_kc5_title">Lateral Movement</div>
-									<span data-i18n="s3_kc5_desc">Nutzt gestohlene Tokens, um weitere Pakete des Maintainers zu modifizieren &amp; re-publishen</span>
+									<span data-i18n="s3_kc5_desc"
+										>Nutzt gestohlene Tokens, um weitere Pakete des Maintainers zu modifizieren
+										&amp; re-publishen</span
+									>
 								</div>
 							</div>
 							<div class="kc-step">
 								<div class="kc-num">6</div>
 								<div class="kc-body">
 									<div class="kc-title" data-i18n="s3_kc6_title">Impact</div>
-									<span data-i18n="s3_kc6_desc">Backdoor-Payload in gezielten Paketen; Data Exfiltration aus CI/CD-Systemen</span>
+									<span data-i18n="s3_kc6_desc"
+										>Backdoor-Payload in gezielten Paketen; Data Exfiltration aus
+										CI/CD-Systemen</span
+									>
 								</div>
 							</div>
 						</div>
@@ -972,7 +1032,11 @@
 
 						<div class="grid-2" style="margin-top: 0.8rem; gap: 0.7rem">
 							<div class="card-red">
-								<div class="meta-label" style="color: #f87171; margin-bottom: 0.3rem" data-i18n="s3b_sign_label">
+								<div
+									class="meta-label"
+									style="color: #f87171; margin-bottom: 0.3rem"
+									data-i18n="s3b_sign_label"
+								>
 									Häufige Script-Signaturen
 								</div>
 								<code>process.env.*</code><br />
@@ -982,7 +1046,11 @@
 								<code>child_process.exec("env")</code>
 							</div>
 							<div class="card-orange">
-								<div class="meta-label" style="color: #f97316; margin-bottom: 0.3rem" data-i18n="s3b_obfus_label">
+								<div
+									class="meta-label"
+									style="color: #f97316; margin-bottom: 0.3rem"
+									data-i18n="s3b_obfus_label"
+								>
 									Obfuskationstechniken
 								</div>
 								<ul>
@@ -1020,7 +1088,9 @@
 								Injiziert den Schadcode in <code>scripts.postinstall</code> des Ziel-Pakets und passt
 								<code>version</code> an
 							</li>
-							<li data-i18n="s3c_li4">Führt <code>npm publish</code> mit dem gestohlenen NPM-Token aus</li>
+							<li data-i18n="s3c_li4">
+								Führt <code>npm publish</code> mit dem gestohlenen NPM-Token aus
+							</li>
 						</ul>
 
 						<div class="grid-2" style="margin-top: 0.8rem; gap: 0.8rem">
@@ -1099,7 +1169,9 @@
 							<div class="flow-row">
 								<div class="card-orange flow-card" style="min-width: 10rem">
 									<div class="flow-card-label">npm publish</div>
-									<div class="flow-card-value" style="color: #f97316" data-i18n="s3d_infected_deps">Infizierte Dependencies</div>
+									<div class="flow-card-value" style="color: #f97316" data-i18n="s3d_infected_deps">
+										Infizierte Dependencies
+									</div>
 								</div>
 								<span class="flow-arrow">→</span>
 								<div class="flow-note" data-i18n="s3d_note">
@@ -1180,7 +1252,11 @@
 
 						<div class="grid-2" style="gap: 0.7rem">
 							<div class="card-red">
-								<div class="meta-label" style="color: #f87171; margin-bottom: 0.4rem" data-i18n="s4b_critical">
+								<div
+									class="meta-label"
+									style="color: #f87171; margin-bottom: 0.4rem"
+									data-i18n="s4b_critical"
+								>
 									Kritisch betroffen
 								</div>
 								<ul>
@@ -1190,7 +1266,11 @@
 								</ul>
 							</div>
 							<div class="card-orange">
-								<div class="meta-label" style="color: #f97316; margin-bottom: 0.4rem" data-i18n="s4b_heavy">
+								<div
+									class="meta-label"
+									style="color: #f97316; margin-bottom: 0.4rem"
+									data-i18n="s4b_heavy"
+								>
 									Stark betroffen
 								</div>
 								<ul>
@@ -1200,7 +1280,11 @@
 								</ul>
 							</div>
 							<div class="card-blue">
-								<div class="meta-label" style="color: #38bdf8; margin-bottom: 0.4rem" data-i18n="s4b_infra">
+								<div
+									class="meta-label"
+									style="color: #38bdf8; margin-bottom: 0.4rem"
+									data-i18n="s4b_infra"
+								>
 									Infrastrukturschäden
 								</div>
 								<ul>
@@ -1210,7 +1294,11 @@
 								</ul>
 							</div>
 							<div class="card-green">
-								<div class="meta-label" style="color: #4ade80; margin-bottom: 0.4rem" data-i18n="s4b_less">
+								<div
+									class="meta-label"
+									style="color: #4ade80; margin-bottom: 0.4rem"
+									data-i18n="s4b_less"
+								>
 									Weniger betroffen
 								</div>
 								<ul>
@@ -1234,7 +1322,11 @@
 						<h3 style="margin-bottom: 0.6rem" data-i18n="s4c_net_title">Netzwerk-Endpunkte</h3>
 						<div class="grid-2" style="gap: 0.7rem; margin-bottom: 0.8rem">
 							<div class="card-red">
-								<div class="meta-label" style="color: #f87171; margin-bottom: 0.3rem" data-i18n="s4c_c2_label">
+								<div
+									class="meta-label"
+									style="color: #f87171; margin-bottom: 0.3rem"
+									data-i18n="s4c_c2_label"
+								>
 									C2-Domains (Kodem)
 								</div>
 								<code>shai-hulud[.]xyz</code><br />
@@ -1243,10 +1335,15 @@
 								<code>env-dump-upload[.]net</code>
 							</div>
 							<div class="card-orange">
-								<div class="meta-label" style="color: #f97316; margin-bottom: 0.3rem" data-i18n="s4c_exfil_label">
+								<div
+									class="meta-label"
+									style="color: #f97316; margin-bottom: 0.3rem"
+									data-i18n="s4c_exfil_label"
+								>
 									Exfiltration-Pfade
 								</div>
-								<span data-i18n="s4c_exfil1">HTTPS-POST an <code>/collect</code></span><br />
+								<span data-i18n="s4c_exfil1">HTTPS-POST an <code>/collect</code></span
+								><br />
 								<span data-i18n="s4c_exfil2">Egress auf Port 8443, 9443</span><br />
 								<span data-i18n="s4c_exfil3">DNS-Auflösungen Bulletproof-Hosting</span><br />
 								<span data-i18n="s4c_exfil4"><code>curl -X POST</code> mit JSON-Body</span>
@@ -1256,7 +1353,11 @@
 						<h3 style="margin-bottom: 0.6rem" data-i18n="s4c_fs_title">Dateisystem-Indikatoren</h3>
 						<div class="grid-2" style="gap: 0.7rem">
 							<div class="card-blue">
-								<div class="meta-label" style="color: #38bdf8; margin-bottom: 0.3rem" data-i18n="s4c_fnames_label">
+								<div
+									class="meta-label"
+									style="color: #38bdf8; margin-bottom: 0.3rem"
+									data-i18n="s4c_fnames_label"
+								>
 									Beobachtete Dateinamen
 								</div>
 								<code>postinstall.js</code><br />
@@ -1266,7 +1367,11 @@
 								<code>update.js</code>
 							</div>
 							<div class="card-green">
-								<div class="meta-label" style="color: #4ade80; margin-bottom: 0.3rem" data-i18n="s4c_detect_label">
+								<div
+									class="meta-label"
+									style="color: #4ade80; margin-bottom: 0.3rem"
+									data-i18n="s4c_detect_label"
+								>
 									Erkennungsmethoden
 								</div>
 								<ul>
@@ -1294,7 +1399,13 @@
 
 						<div class="grid-2" style="gap: 0.8rem">
 							<div class="card-red">
-								<div class="meta-label" style="color: #f87171; margin-bottom: 0.4rem" data-i18n="s4d_warn_label">Warnsignale</div>
+								<div
+									class="meta-label"
+									style="color: #f87171; margin-bottom: 0.4rem"
+									data-i18n="s4d_warn_label"
+								>
+									Warnsignale
+								</div>
 								<ul>
 									<li data-i18n="s4d_warn1">
 										<strong style="color: #0f0f23">Unerwartete Patch-Bumps</strong>
@@ -1315,12 +1426,26 @@
 								</ul>
 							</div>
 							<div class="card-blue">
-								<div class="meta-label" style="color: #38bdf8; margin-bottom: 0.4rem" data-i18n="s4d_check_label">Prüfmethoden</div>
+								<div
+									class="meta-label"
+									style="color: #38bdf8; margin-bottom: 0.4rem"
+									data-i18n="s4d_check_label"
+								>
+									Prüfmethoden
+								</div>
 								<ul>
-									<li data-i18n="s4d_check1"><code>npm diff</code> – Code-Unterschiede analysieren</li>
-									<li data-i18n="s4d_check2"><code>npm audit</code> – bekannte Schwachstellen prüfen</li>
-									<li data-i18n="s4d_check3"><code>socket.dev</code> – Runtime-Verhalten analysieren</li>
-									<li data-i18n="s4d_check4"><code>sigstore/cosign</code> – Paket-Signaturen verifizieren</li>
+									<li data-i18n="s4d_check1">
+										<code>npm diff</code> – Code-Unterschiede analysieren
+									</li>
+									<li data-i18n="s4d_check2">
+										<code>npm audit</code> – bekannte Schwachstellen prüfen
+									</li>
+									<li data-i18n="s4d_check3">
+										<code>socket.dev</code> – Runtime-Verhalten analysieren
+									</li>
+									<li data-i18n="s4d_check4">
+										<code>sigstore/cosign</code> – Paket-Signaturen verifizieren
+									</li>
 									<li data-i18n="s4d_check5">Lockfile-Diffs im CI/CD Review</li>
 								</ul>
 							</div>
@@ -1357,7 +1482,9 @@
 						<div class="timeline" style="margin-bottom: 0.8rem">
 							<div class="timeline-item">
 								<div class="tl-title" data-i18n="s5_tl1_title">Takedown &amp; Depublizierung</div>
-								<div class="tl-desc" data-i18n="s5_tl1_desc">1.100+ Pakete gesperrt; Daten aus CDN-Cache invalidiert</div>
+								<div class="tl-desc" data-i18n="s5_tl1_desc">
+									1.100+ Pakete gesperrt; Daten aus CDN-Cache invalidiert
+								</div>
 							</div>
 							<div class="timeline-item">
 								<div class="tl-title" data-i18n="s5_tl2_title">Token-Revokation</div>
@@ -1367,11 +1494,15 @@
 							</div>
 							<div class="timeline-item">
 								<div class="tl-title" data-i18n="s5_tl3_title">CVE-Veröffentlichung &amp; Advisory</div>
-								<div class="tl-desc" data-i18n="s5_tl3_desc">CERT/CC, CISA, BSI koordinierte Meldungen innerhalb von 6h</div>
+								<div class="tl-desc" data-i18n="s5_tl3_desc">
+									CERT/CC, CISA, BSI koordinierte Meldungen innerhalb von 6h
+								</div>
 							</div>
 							<div class="timeline-item">
 								<div class="tl-title" data-i18n="s5_tl4_title">Rate-Limit für Publish-API</div>
-								<div class="tl-desc" data-i18n="s5_tl4_desc">Neues Limit: max. 10 Publishes/Stunde per Account</div>
+								<div class="tl-desc" data-i18n="s5_tl4_desc">
+									Neues Limit: max. 10 Publishes/Stunde per Account
+								</div>
 							</div>
 						</div>
 
@@ -1445,24 +1576,30 @@
 
 						<div class="grid-2" style="gap: 0.9rem">
 							<div>
-								<h3 style="margin-bottom: 0.6rem; font-size: 1rem" data-i18n="s5c_dev_title">Für Entwickler</h3>
+								<h3 style="margin-bottom: 0.6rem; font-size: 1rem" data-i18n="s5c_dev_title">
+									Für Entwickler
+								</h3>
 								<ul>
 									<li data-i18n="s5c_dev1"><code>npm ci --ignore-scripts</code> in CI/CD</li>
 									<li data-i18n="s5c_dev2">
 										<strong style="color: #0f0f23">Granulare Tokens</strong> mit minimalem Scope
 										(Publish-Only)
 									</li>
-									<li data-i18n="s5c_dev3">Package-Lock prüfen (<code>npm audit</code>, <code>socket.dev</code>)</li>
+									<li data-i18n="s5c_dev3">
+										Package-Lock prüfen (<code>npm audit</code>, <code>socket.dev</code>)
+									</li>
 									<li data-i18n="s5c_dev4">2FA für NPM-Accounts erzwingen</li>
 									<li data-i18n="s5c_dev5">Versions-Pinning statt Range-Dependencies</li>
 								</ul>
 							</div>
 							<div>
-								<h3 style="margin-bottom: 0.6rem; font-size: 1rem" data-i18n="s5c_org_title">Für Organisationen</h3>
+								<h3 style="margin-bottom: 0.6rem; font-size: 1rem" data-i18n="s5c_org_title">
+									Für Organisationen
+								</h3>
 								<ul>
 									<li data-i18n="s5c_org1">
-										<strong style="color: #0f0f23">Private Registry</strong> (Verdaccio, Artifactory)
-										mit Allowlist
+										<strong style="color: #0f0f23">Private Registry</strong> (Verdaccio,
+										Artifactory) mit Allowlist
 									</li>
 									<li data-i18n="s5c_org2">SBOM (Software Bill of Materials) für alle Builds</li>
 									<li data-i18n="s5c_org3">Secrets in CI/CD nicht als Env-Vars – nutze Vaults</li>
@@ -1572,7 +1709,9 @@
 							<div class="card lesson-card">
 								<div class="lesson-icon">🚫</div>
 								<div class="lesson-title" data-i18n="s6_l2_title">Disable Scripts</div>
-								<div class="lesson-desc" data-i18n="s6_l2_desc"><code>--ignore-scripts</code> als Standard in CI/CD</div>
+								<div class="lesson-desc" data-i18n="s6_l2_desc">
+									<code>--ignore-scripts</code> als Standard in CI/CD
+								</div>
 							</div>
 							<div class="card lesson-card">
 								<div class="lesson-icon">🔍</div>
@@ -1667,7 +1806,9 @@
 				═══════════════════════════════════════════ -->
 				<section>
 					<section class="title-slide">
-						<div class="badge badge-orange" style="margin-bottom: 1rem" data-i18n="qa_badge">Ende des Vortrags</div>
+						<div class="badge badge-orange" style="margin-bottom: 1rem" data-i18n="qa_badge">
+							Ende des Vortrags
+						</div>
 						<h1 style="font-size: 2.8rem; margin-bottom: 0" data-i18n="qa_title">Fragen?</h1>
 						<div class="outro-line"></div>
 						<p class="subtitle" style="max-width: 28rem; line-height: 1.6" data-i18n="qa_sub">
@@ -1684,9 +1825,9 @@
 						</div>
 
 						<aside class="notes">
-							Danke für die Aufmerksamkeit. Zeit für Fragen. Mögliche Fragen: Warum war kein Signierungszwang
-							da? Hat NPM sich seitdem geändert? Wie kann ich prüfen ob mein Projekt betroffen war?
-							Im Anschluss gibt es eine Folie mit Quellen.
+							Danke für die Aufmerksamkeit. Zeit für Fragen. Mögliche Fragen: Warum war kein
+							Signierungszwang da? Hat NPM sich seitdem geändert? Wie kann ich prüfen ob mein Projekt
+							betroffen war? Im Anschluss gibt es eine Folie mit Quellen.
 						</aside>
 					</section>
 
@@ -1696,58 +1837,135 @@
 
 						<div style="font-size: 0.64rem; display: flex; flex-direction: column; gap: 0.35rem">
 							<div class="card card-row" style="padding: 0.35rem 0.7rem">
-								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">1</span>
+								<span
+									style="
+										font-size: 0.65rem;
+										font-weight: 700;
+										min-width: 1.4rem;
+										color: #ea580c;
+										flex-shrink: 0;
+									"
+									>1</span
+								>
 								<div>
 									<div style="font-weight: 600; color: #0f0f23">Wiz Research</div>
-									<div style="color: #64748b" data-i18n="src_1">Shai-Hulud: Ongoing Package Supply Chain Worm (Sep 2025)</div>
+									<div style="color: #64748b" data-i18n="src_1">
+										Shai-Hulud: Ongoing Package Supply Chain Worm (Sep 2025)
+									</div>
 								</div>
 							</div>
 							<div class="card card-row" style="padding: 0.35rem 0.7rem">
-								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">2</span>
+								<span
+									style="
+										font-size: 0.65rem;
+										font-weight: 700;
+										min-width: 1.4rem;
+										color: #ea580c;
+										flex-shrink: 0;
+									"
+									>2</span
+								>
 								<div>
 									<div style="font-weight: 600; color: #0f0f23">Unit 42 (Palo Alto Networks)</div>
-									<div style="color: #64748b" data-i18n="src_2">"Shai-Hulud" Worm Compromises npm Ecosystem (Nov 2025)</div>
+									<div style="color: #64748b" data-i18n="src_2">
+										"Shai-Hulud" Worm Compromises npm Ecosystem (Nov 2025)
+									</div>
 								</div>
 							</div>
 							<div class="card card-row" style="padding: 0.35rem 0.7rem">
-								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">3</span>
+								<span
+									style="
+										font-size: 0.65rem;
+										font-weight: 700;
+										min-width: 1.4rem;
+										color: #ea580c;
+										flex-shrink: 0;
+									"
+									>3</span
+								>
 								<div>
 									<div style="font-weight: 600; color: #0f0f23">Kaspersky Securelist</div>
-									<div style="color: #64748b" data-i18n="src_3">Shai-Hulud worm infects npm packages (Sep 2025) / Nothing to steal? Let's wipe. (Dez 2025)</div>
+									<div style="color: #64748b" data-i18n="src_3">
+										Shai-Hulud worm infects npm packages (Sep 2025) / Nothing to steal? Let's wipe.
+										(Dez 2025)
+									</div>
 								</div>
 							</div>
 							<div class="card card-row" style="padding: 0.35rem 0.7rem">
-								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">4</span>
+								<span
+									style="
+										font-size: 0.65rem;
+										font-weight: 700;
+										min-width: 1.4rem;
+										color: #ea580c;
+										flex-shrink: 0;
+									"
+									>4</span
+								>
 								<div>
 									<div style="font-weight: 600; color: #0f0f23">Microsoft Security Blog</div>
-									<div style="color: #64748b" data-i18n="src_4">Shai-Hulud 2.0: Guidance for Detecting, Investigating, and Defending (Dez 2025)</div>
+									<div style="color: #64748b" data-i18n="src_4">
+										Shai-Hulud 2.0: Guidance for Detecting, Investigating, and Defending (Dez 2025)
+									</div>
 								</div>
 							</div>
 							<div class="card card-row" style="padding: 0.35rem 0.7rem">
-								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">5</span>
+								<span
+									style="
+										font-size: 0.65rem;
+										font-weight: 700;
+										min-width: 1.4rem;
+										color: #ea580c;
+										flex-shrink: 0;
+									"
+									>5</span
+								>
 								<div>
 									<div style="font-weight: 600; color: #0f0f23">GitHub Blog</div>
-									<div style="color: #64748b" data-i18n="src_5">Our Plan for a More Secure npm Supply Chain (Sep 2025)</div>
+									<div style="color: #64748b" data-i18n="src_5">
+										Our Plan for a More Secure npm Supply Chain (Sep 2025)
+									</div>
 								</div>
 							</div>
 							<div class="card card-row" style="padding: 0.35rem 0.7rem">
-								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">6</span>
+								<span
+									style="
+										font-size: 0.65rem;
+										font-weight: 700;
+										min-width: 1.4rem;
+										color: #ea580c;
+										flex-shrink: 0;
+									"
+									>6</span
+								>
 								<div>
 									<div style="font-weight: 600; color: #0f0f23">MITRE ATT&CK</div>
 									<div style="color: #64748b" data-i18n="src_6">Shai-Hulud, Software S9008</div>
 								</div>
 							</div>
 							<div class="card card-row" style="padding: 0.35rem 0.7rem">
-								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">7</span>
+								<span
+									style="
+										font-size: 0.65rem;
+										font-weight: 700;
+										min-width: 1.4rem;
+										color: #ea580c;
+										flex-shrink: 0;
+									"
+									>7</span
+								>
 								<div>
 									<div style="font-weight: 600; color: #0f0f23">Trend Micro</div>
-									<div style="color: #64748b" data-i18n="src_7">What We Know About the NPM Supply Chain Attack (Sep 2025)</div>
+									<div style="color: #64748b" data-i18n="src_7">
+										What We Know About the NPM Supply Chain Attack (Sep 2025)
+									</div>
 								</div>
 							</div>
 						</div>
 
 						<aside class="notes">
-							Vollständige Quellenliste: Alle Berichte sind online verfügbar und wurden für die Erstellung dieser Präsentation verwendet.
+							Vollständige Quellenliste: Alle Berichte sind online verfügbar und wurden für die Erstellung
+							dieser Präsentation verwendet.
 						</aside>
 					</section>
 				</section>
@@ -1799,22 +2017,26 @@
 					s1_li1: '<strong style="color:#0f0f23">Self-replication</strong> – spreads without user interaction',
 					s1_li2: 'Exploits <strong style="color:#0f0f23">vulnerabilities in software or protocols</strong>',
 					s1_li3: 'Can infect networks, filesystems, or – as here – <strong style="color:#0f0f23">package ecosystems</strong>',
-					s1_li4: 'Classics: <em>Morris Worm 1988</em>, <em>ILOVEYOU 2000</em>, <em>WannaCry 2017</em>',
+					s1_li4: "Classics: <em>Morris Worm 1988</em>, <em>ILOVEYOU 2000</em>, <em>WannaCry 2017</em>",
 					s1_critical: "Critical",
 					s1_cvss_sub: "Attack Vector: Network · Privileges Required: None",
 					s1b_title: "Relevance of the Attack Type",
 					s1b_stat1: "NPM Packages (2025)",
 					s1b_stat2: "Active NPM Users",
 					s1b_stat3: "Affected Packages (Nov 2025)",
-					s1b_li1: 'Supply chain attacks are 2024–2025 the <strong style="color:#0f0f23">fastest growing threat category</strong>',
-					s1b_li2: 'Known incidents: <em>XZ-Utils Backdoor (2024)</em>, <em>event-stream (2018)</em>, <em>ua-parser-js (2021)</em>',
-					s1b_li3: 'Once infected, a package is <strong style="color:#0f0f23">trusted by all downstream projects</strong>',
-					s1b_li4: 'Shai-Hulud 2.0 was the <strong style="color:#f97316">first documented self-replicating worm</strong> in the NPM ecosystem',
+					s1b_li1:
+						'Supply chain attacks are 2024–2025 the <strong style="color:#0f0f23">fastest growing threat category</strong>',
+					s1b_li2:
+						"Known incidents: <em>XZ-Utils Backdoor (2024)</em>, <em>event-stream (2018)</em>, <em>ua-parser-js (2021)</em>",
+					s1b_li3:
+						'Once infected, a package is <strong style="color:#0f0f23">trusted by all downstream projects</strong>',
+					s1b_li4:
+						'Shai-Hulud 2.0 was the <strong style="color:#f97316">first documented self-replicating worm</strong> in the NPM ecosystem',
 					s2_title: "Context of the Attack",
 					s2_h3: "The Specific Incident",
 					s2_tl1_title: "First Shai-Hulud wave discovered",
 					s2_tl1_desc: "Initial self-replicating worm in the NPM ecosystem",
-					s2_tl2_title: 'Second infection: <code>@ctrl/tinycolor</code> v3.4.1',
+					s2_tl2_title: "Second infection: <code>@ctrl/tinycolor</code> v3.4.1",
 					s2_tl2_desc: "Popular UI helper package, ~2M weekly downloads",
 					s2_tl3_title: "Exponential spread",
 					s2_tl3_desc: "Over 1,100 packages infected; worm publishes new versions via stolen tokens",
@@ -1822,19 +2044,22 @@
 					s2_tl4_desc: "Aikido Security & Wiz Research publish details: 26,000+ GitHub repos created",
 					s2b_title: "Affected Companies & Packages",
 					s2b_comp_title: "Compromised Companies",
-					s2b_comp_desc: '<strong>Zapier</strong>, <strong>ENS</strong> (Ethereum Name Service), <strong>AsyncAPI</strong>, <strong>PostHog</strong>, <strong>Postman</strong> – maintainer accounts compromised via phishing',
+					s2b_comp_desc:
+						"<strong>Zapier</strong>, <strong>ENS</strong> (Ethereum Name Service), <strong>AsyncAPI</strong>, <strong>PostHog</strong>, <strong>Postman</strong> – maintainer accounts compromised via phishing",
 					s2b_leak_label: "Packages with Secret Leakage",
 					s2b_ioc_label: "Indicators of Attack",
 					s2b_ioc1: "26,000+ GitHub repos created",
-					s2b_ioc2: "500+ known compromised packages",
+					s2b_ioc2: "400 - 1000 known compromised packages",
 					s2b_ioc3: 'Repo description: <em>"Sha1-Hulud: The Second Coming"</em>',
 					s2b_ioc4: "Look-alike package names (typosquatting)",
 					s2b_ioc5: "Multi-vendor confirmation (Wiz, Aikido, Kodem)",
 					s2c_title: "Attacker Profile & Motivation",
 					s2c_profil_title: "Profile",
-					s2c_profil1: '<strong style="color:#0f0f23">Advanced threat group</strong>, likely state-sponsored or organized cybercrime',
+					s2c_profil1:
+						'<strong style="color:#0f0f23">Advanced threat group</strong>, likely state-sponsored or organized cybercrime',
 					s2c_profil2: "Deep knowledge of NPM internals and CI/CD workflows",
-					s2c_profil3: 'Worm code in multiple languages (<code>JS</code>, <code>Python</code>, <code>Bash</code>)',
+					s2c_profil3:
+						"Worm code in multiple languages (<code>JS</code>, <code>Python</code>, <code>Bash</code>)",
 					s2c_profil4: "Infrastructure in bulletproof hosting networks (Eastern Europe)",
 					s2c_profil5: "Highly automated repo creation & package publishing pipelines",
 					s2c_motiv_title: "Motivation",
@@ -1849,22 +2074,30 @@
 					s3_kc1_title: "Initial Access",
 					s3_kc1_desc: "Phishing → Maintainer account compromised, NPM token stolen",
 					s3_kc2_title: "Execution",
-					s3_kc2_desc: 'Malicious code injected into <code>postinstall</code> hook; executes automatically on <code>npm install</code>',
+					s3_kc2_desc:
+						"Malicious code injected into <code>postinstall</code> hook; executes automatically on <code>npm install</code>",
 					s3_kc3_title: "Persistence",
-					s3_kc3_desc: 'Worm writes its own publish routine into <code>package.json</code>; <code>prepare</code> script infects dependencies',
+					s3_kc3_desc:
+						"Worm writes its own publish routine into <code>package.json</code>; <code>prepare</code> script infects dependencies",
 					s3_kc4_title: "Credential Access",
-					s3_kc4_desc: 'Reads <code>~/.npmrc</code>, <code>.env</code>, CI env vars; exfiltrates via HTTPS POST',
+					s3_kc4_desc:
+						"Reads <code>~/.npmrc</code>, <code>.env</code>, CI env vars; exfiltrates via HTTPS POST",
 					s3_kc5_title: "Lateral Movement",
 					s3_kc5_desc: "Uses stolen tokens to modify & re-publish more packages of the maintainer",
 					s3_kc6_title: "Impact",
 					s3_kc6_desc: "Backdoor payload in targeted packages; data exfiltration from CI/CD systems",
 					s3b_title: "Runtime Behavior – Technical Details",
 					s3b_h3: "Analysis of Malicious Packages (Kodem / Wiz)",
-					s3b_li1: 'Malicious Logic in <strong style="color:#0f0f23">Lifecycle Hooks</strong>: <code>install</code>, <code>postinstall</code>, <code>prepare</code>, <code>prepublish</code>',
-					s3b_li2: 'Scripts enumerate <strong style="color:#0f0f23">all environment variables</strong> and extract CI service tokens, cloud credentials, and package manager tokens',
-					s3b_li3: '<strong style="color:#0f0f23">Secondary Payloads</strong>: Multiple samples download further malware via HTTP after initial infection',
-					s3b_li4: '<strong style="color:#0f0f23">Obfuscation</strong>: Base64 encoding, string splitting, minimal XOR operations',
-					s3b_li5: 'When tokens are found: <strong style="color:#f97316">Re-Publish</strong> of tampered versions under the victim\'s NPM profile',
+					s3b_li1:
+						'Malicious Logic in <strong style="color:#0f0f23">Lifecycle Hooks</strong>: <code>install</code>, <code>postinstall</code>, <code>prepare</code>, <code>prepublish</code>',
+					s3b_li2:
+						'Scripts enumerate <strong style="color:#0f0f23">all environment variables</strong> and extract CI service tokens, cloud credentials, and package manager tokens',
+					s3b_li3:
+						'<strong style="color:#0f0f23">Secondary Payloads</strong>: Multiple samples download further malware via HTTP after initial infection',
+					s3b_li4:
+						'<strong style="color:#0f0f23">Obfuscation</strong>: Base64 encoding, string splitting, minimal XOR operations',
+					s3b_li5:
+						'When tokens are found: <strong style="color:#f97316">Re-Publish</strong> of tampered versions under the victim\'s NPM profile',
 					s3b_sign_label: "Common Script Signatures",
 					s3b_obfus_label: "Obfuscation Techniques",
 					s3b_obfus1: "Base64-Encoded Payloads",
@@ -1874,12 +2107,15 @@
 					s3b_obfus5: "Nested <code>eval()</code> calls",
 					s3c_title: "Self-Replication in Detail",
 					s3c_h3: "The Infection Algorithm",
-					s3c_li1: 'The worm iterates over all <code>dependencies</code> & <code>devDependencies</code> in <code>package.json</code>',
-					s3c_li2: 'Checks if the <code>node_modules/</code> directory of each package is writable',
-					s3c_li3: 'Injects malicious code into <code>scripts.postinstall</code> of the target package and adjusts <code>version</code>',
-					s3c_li4: 'Runs <code>npm publish</code> with the stolen NPM token',
+					s3c_li1:
+						"The worm iterates over all <code>dependencies</code> & <code>devDependencies</code> in <code>package.json</code>",
+					s3c_li2: "Checks if the <code>node_modules/</code> directory of each package is writable",
+					s3c_li3:
+						"Injects malicious code into <code>scripts.postinstall</code> of the target package and adjusts <code>version</code>",
+					s3c_li4: "Runs <code>npm publish</code> with the stolen NPM token",
 					s3c_marker_title: "Marker Flag",
-					s3c_marker_desc: 'Invisible marker (e.g. <code>__worm</code> field) in <code>package.json</code> to skip already infected packages.',
+					s3c_marker_desc:
+						"Invisible marker (e.g. <code>__worm</code> field) in <code>package.json</code> to skip already infected packages.",
 					s3c_timeout_title: "Timeout Mechanism",
 					s3c_timeout_desc: "Random delay (30–300s) per package to avoid DDoS detection.",
 					s3d_title: "Attack Flow – Visualization",
@@ -1919,17 +2155,17 @@
 					s4b_infra2: "GitLab CI – 47k compromised pipelines",
 					s4b_infra3: "AWS CodePipeline – credentials stolen",
 					s4b_less: "Less affected",
-					s4b_less1: 'Projects with <code>--ignore-scripts</code> flag',
+					s4b_less1: "Projects with <code>--ignore-scripts</code> flag",
 					s4b_less2: "Air-gapped environments",
 					s4b_less3: "Yarn Berry (PnP mode)",
 					s4c_title: "Indicators of Compromise (IoCs)",
 					s4c_net_title: "Network Endpoints",
 					s4c_c2_label: "C2 Domains (Kodem)",
 					s4c_exfil_label: "Exfiltration Paths",
-					s4c_exfil1: 'HTTPS POST to <code>/collect</code>',
+					s4c_exfil1: "HTTPS POST to <code>/collect</code>",
 					s4c_exfil2: "Egress on port 8443, 9443",
 					s4c_exfil3: "DNS resolutions bulletproof hosting",
-					s4c_exfil4: '<code>curl -X POST</code> with JSON body',
+					s4c_exfil4: "<code>curl -X POST</code> with JSON body",
 					s4c_fs_title: "Filesystem Indicators",
 					s4c_fnames_label: "Observed Filenames",
 					s4c_detect_label: "Detection Methods",
@@ -1940,18 +2176,23 @@
 					s4d_title: "Versioning Signals – Detecting Tampered Packages",
 					s4d_sub: "Compromised packages leave characteristic traces in version history",
 					s4d_warn_label: "Warning Signs",
-					s4d_warn1: '<strong style="color:#0f0f23">Unexpected patch bumps</strong> – new versions without corresponding code changes in the changelog',
-					s4d_warn2: '<strong style="color:#0f0f23">Missing Git tags</strong> – published version has no corresponding release tag',
-					s4d_warn3: '<strong style="color:#0f0f23">GitHub/NPM mismatch</strong> – tarball on NPM differs from GitHub source code',
-					s4d_warn4: '<strong style="color:#0f0f23">Inconsistent maintainer activity</strong> – publish time does not match GitHub history',
+					s4d_warn1:
+						'<strong style="color:#0f0f23">Unexpected patch bumps</strong> – new versions without corresponding code changes in the changelog',
+					s4d_warn2:
+						'<strong style="color:#0f0f23">Missing Git tags</strong> – published version has no corresponding release tag',
+					s4d_warn3:
+						'<strong style="color:#0f0f23">GitHub/NPM mismatch</strong> – tarball on NPM differs from GitHub source code',
+					s4d_warn4:
+						'<strong style="color:#0f0f23">Inconsistent maintainer activity</strong> – publish time does not match GitHub history',
 					s4d_check_label: "Verification Methods",
-					s4d_check1: '<code>npm diff</code> – analyze code differences',
-					s4d_check2: '<code>npm audit</code> – check known vulnerabilities',
-					s4d_check3: '<code>socket.dev</code> – analyze runtime behavior',
-					s4d_check4: '<code>sigstore/cosign</code> – verify package signatures',
+					s4d_check1: "<code>npm diff</code> – analyze code differences",
+					s4d_check2: "<code>npm audit</code> – check known vulnerabilities",
+					s4d_check3: "<code>socket.dev</code> – analyze runtime behavior",
+					s4d_check4: "<code>sigstore/cosign</code> – verify package signatures",
 					s4d_check5: "Lockfile diffs in CI/CD review",
 					s4d_bp_title: "Best Practice",
-					s4d_bp_desc: 'Always version lockfiles (<code>package-lock.json</code>, <code>yarn.lock</code>) and watch for unexpected patch versions in code reviews.',
+					s4d_bp_desc:
+						"Always version lockfiles (<code>package-lock.json</code>, <code>yarn.lock</code>) and watch for unexpected patch versions in code reviews.",
 					s5_title: "Countermeasures",
 					s5_h3: "Immediate Actions (NPM / GitHub)",
 					s5_tl1_title: "Takedown & Depublishing",
@@ -1967,33 +2208,38 @@
 					s5b_step1_title: "Check dependency manifests",
 					s5b_step1_desc: "Identify affected versions, scan lockfiles for tampered entries",
 					s5b_step2_title: "Rotate secrets",
-					s5b_step2_desc: "If contact with infected packages: immediately renew all tokens, keys and passwords",
+					s5b_step2_desc:
+						"If contact with infected packages: immediately renew all tokens, keys and passwords",
 					s5b_step3_title: "Pin trusted versions",
-					s5b_step3_desc: 'Version lockfiles, enforce integrity checks via <code>npm audit</code>',
+					s5b_step3_desc: "Version lockfiles, enforce integrity checks via <code>npm audit</code>",
 					s5b_step4_title: "Block malicious packages",
 					s5b_step4_desc: "Update registry policies for newly discovered malicious packages",
 					s5b_step5_title: "Monitor suspicious behavior",
 					s5b_step5_desc: "Unexpected outbound requests, modified build scripts, credential anomalies",
 					s5c_title: "Prevention – Developers & Organizations",
 					s5c_dev_title: "For Developers",
-					s5c_dev1: '<code>npm ci --ignore-scripts</code> in CI/CD',
-					s5c_dev2: '<strong style="color:#0f0f23">Granular tokens</strong> with minimal scope (publish-only)',
-					s5c_dev3: 'Check package lock (<code>npm audit</code>, <code>socket.dev</code>)',
+					s5c_dev1: "<code>npm ci --ignore-scripts</code> in CI/CD",
+					s5c_dev2:
+						'<strong style="color:#0f0f23">Granular tokens</strong> with minimal scope (publish-only)',
+					s5c_dev3: "Check package lock (<code>npm audit</code>, <code>socket.dev</code>)",
 					s5c_dev4: "Enforce 2FA for NPM accounts",
 					s5c_dev5: "Version pinning instead of range dependencies",
 					s5c_org_title: "For Organizations",
-					s5c_org1: '<strong style="color:#0f0f23">Private registry</strong> (Verdaccio, Artifactory) with allowlist',
+					s5c_org1:
+						'<strong style="color:#0f0f23">Private registry</strong> (Verdaccio, Artifactory) with allowlist',
 					s5c_org2: "SBOM (Software Bill of Materials) for all builds",
 					s5c_org3: "Secrets in CI/CD not as env vars – use vaults",
 					s5c_org4: "Block network egress from build containers",
 					s5c_org5: "Integrate supply chain scans into pre-commit hooks",
 					s5c_tools_title: "Tool Recommendations",
-					s5c_tools_desc: '<code>socket.dev</code> · <code>snyk</code> · <code>npm audit</code> · <code>sigstore/cosign</code> (package signing) · <code>npm diff</code>',
+					s5c_tools_desc:
+						"<code>socket.dev</code> · <code>snyk</code> · <code>npm audit</code> · <code>sigstore/cosign</code> (package signing) · <code>npm diff</code>",
 					s5d_title: "NPM Ecosystem – Post-Incident Changes",
 					s5d_tl1_title: "Rate-Limiting for Publish API",
 					s5d_tl1_desc: "Max. 10 publishes/hour/account; trusted maintainers can increase limit",
 					s5d_tl2_title: "Automatic Script Inspection",
-					s5d_tl2_desc: "New packages with postinstall/prepare scripts are statically analyzed before publication",
+					s5d_tl2_desc:
+						"New packages with postinstall/prepare scripts are statically analyzed before publication",
 					s5d_tl3_title: "NPM Trust & Signing",
 					s5d_tl3_desc: "Package signing with Sigstore/cosign for new major versions; verified badge",
 					s5d_tl4_title: "Registry Watch & ML Detection",
@@ -2001,12 +2247,13 @@
 					s5d_tl5_title: "Sandboxed Lifecycle Scripts (RFC)",
 					s5d_tl5_desc: "Proposal for containerized execution of postinstall hooks (OpenJS Foundation)",
 					s5d_ind_title: "Industry-Wide Response",
-					s5d_ind_desc: 'GitHub: <code>dependency-review-action</code> v2 with worm detection. GitLab: NPM audit integrated into CI/CD pipeline protection. OpenJS Foundation: supply chain best practices for all JavaScript package managers.',
+					s5d_ind_desc:
+						"GitHub: <code>dependency-review-action</code> v2 with worm detection. GitLab: NPM audit integrated into CI/CD pipeline protection. OpenJS Foundation: supply chain best practices for all JavaScript package managers.",
 					s6_title: "Lessons Learned",
 					s6_l1_title: "Least Privilege",
 					s6_l1_desc: "Tokens & credentials with minimal scope – Publish ≠ Admin",
 					s6_l2_title: "Disable Scripts",
-					s6_l2_desc: '<code>--ignore-scripts</code> as default in CI/CD',
+					s6_l2_desc: "<code>--ignore-scripts</code> as default in CI/CD",
 					s6_l3_title: "Verify & Audit",
 					s6_l3_desc: "Package hashes, SBOMs, supply chain scans as mandatory step",
 					s6_l4_title: "Network Isolation",
@@ -2055,42 +2302,50 @@
 					s1_li1: '<strong style="color:#0f0f23">Selbstreplikation</strong> – verbreitet sich ohne Nutzerinteraktion',
 					s1_li2: 'Nutzt <strong style="color:#0f0f23">Schwachstellen in Software oder Protokollen</strong> aus',
 					s1_li3: 'Kann Netzwerke, Dateisysteme oder – wie hier – <strong style="color:#0f0f23">Package-Ökosysteme</strong> befallen',
-					s1_li4: 'Klassiker: <em>Morris Worm 1988</em>, <em>ILOVEYOU 2000</em>, <em>WannaCry 2017</em>',
+					s1_li4: "Klassiker: <em>Morris Worm 1988</em>, <em>ILOVEYOU 2000</em>, <em>WannaCry 2017</em>",
 					s1_critical: "Critical",
 					s1_cvss_sub: "Attack Vector: Network · Privileges Required: None",
 					s1b_title: "Relevanz des Angriffstyps",
 					s1b_stat1: "NPM-Pakete (2025)",
 					s1b_stat2: "aktive NPM-Nutzer",
 					s1b_stat3: "betroffene Pakete (Nov 2025)",
-					s1b_li1: 'Supply-Chain-Angriffe sind 2024–2025 die <strong style="color:#0f0f23">am stärksten wachsende Bedrohungskategorie</strong>',
-					s1b_li2: 'Bekannte Vorfälle: <em>XZ-Utils Backdoor (2024)</em>, <em>event-stream (2018)</em>, <em>ua-parser-js (2021)</em>',
-					s1b_li3: 'Einmal infiziertes Paket <strong style="color:#0f0f23">vertrauenswürdig für alle Downstream-Projekte</strong>',
-					s1b_li4: 'Shai-Hulud 2.0 war der <strong style="color:#f97316">erster dokumentierter selbstreplizierender Wurm</strong> im NPM-Ökosystem',
+					s1b_li1:
+						'Supply-Chain-Angriffe sind 2024–2025 die <strong style="color:#0f0f23">am stärksten wachsende Bedrohungskategorie</strong>',
+					s1b_li2:
+						"Bekannte Vorfälle: <em>XZ-Utils Backdoor (2024)</em>, <em>event-stream (2018)</em>, <em>ua-parser-js (2021)</em>",
+					s1b_li3:
+						'Einmal infiziertes Paket <strong style="color:#0f0f23">vertrauenswürdig für alle Downstream-Projekte</strong>',
+					s1b_li4:
+						'Shai-Hulud 2.0 war der <strong style="color:#f97316">erster dokumentierter selbstreplizierender Wurm</strong> im NPM-Ökosystem',
 					s2_title: "Kontext des Angriffs",
 					s2_h3: "Der konkrete Fall",
 					s2_tl1_title: "Erste Shai-Hulud-Welle entdeckt",
 					s2_tl1_desc: "Initialer selbstreplizierender Wurm im NPM-Ökosystem",
-					s2_tl2_title: 'Zweitinfektion: <code>@ctrl/tinycolor</code> v3.4.1',
+					s2_tl2_title: "Zweitinfektion: <code>@ctrl/tinycolor</code> v3.4.1",
 					s2_tl2_desc: "Populäres UI-Hilfspaket, ~2 Mio. wöchentliche Downloads",
 					s2_tl3_title: "Exponentielle Verbreitung",
 					s2_tl3_desc: "Über 1.100 Pakete infiziert; Wurm publiziert neue Versionen via gestohlener Tokens",
 					s2_tl4_title: "Shai-Hulud 2.0 bestätigt",
-					s2_tl4_desc: "Aikido Security & Wiz Research veröffentlichen Details: 26.000+ GitHub-Repos erstellt",
+					s2_tl4_desc:
+						"Aikido Security & Wiz Research veröffentlichen Details: 26.000+ GitHub-Repos erstellt",
 					s2b_title: "Betroffene Unternehmen & Pakete",
 					s2b_comp_title: "Kompromittierte Unternehmen",
-					s2b_comp_desc: '<strong>Zapier</strong>, <strong>ENS</strong> (Ethereum Name Service), <strong>AsyncAPI</strong>, <strong>PostHog</strong>, <strong>Postman</strong> – Maintainer-Accounts via Phishing kompromittiert',
+					s2b_comp_desc:
+						"<strong>Zapier</strong>, <strong>ENS</strong> (Ethereum Name Service), <strong>AsyncAPI</strong>, <strong>PostHog</strong>, <strong>Postman</strong> – Maintainer-Accounts via Phishing kompromittiert",
 					s2b_leak_label: "Pakete mit Secret Leakage",
 					s2b_ioc_label: "Angriffsindikatoren",
 					s2b_ioc1: "26.000+ GitHub-Repos erstellt",
-					s2b_ioc2: "500+ bekannte kompromittierte Pakete",
+					s2b_ioc2: "400 - 1000 bekannte kompromittierte Pakete",
 					s2b_ioc3: 'Repo-Beschreibung: <em>„Sha1-Hulud: The Second Coming"</em>',
 					s2b_ioc4: "Look-alike Paketnamen (Typosquatting)",
 					s2b_ioc5: "Multi-Vendor-Bestätigung (Wiz, Aikido, Kodem)",
 					s2c_title: "Angreiferprofil & Motivation",
 					s2c_profil_title: "Profil",
-					s2c_profil1: '<strong style="color:#0f0f23">Fortgeschrittene Bedrohungsgruppe</strong>, wahrscheinlich staatlich gesponsert oder organisierte Cyberkriminalität',
+					s2c_profil1:
+						'<strong style="color:#0f0f23">Fortgeschrittene Bedrohungsgruppe</strong>, wahrscheinlich staatlich gesponsert oder organisierte Cyberkriminalität',
 					s2c_profil2: "Tief gehende Kenntnisse der NPM-Internals und CI/CD-Workflows",
-					s2c_profil3: 'Wurm-Code in mehreren Sprachen (<code>JS</code>, <code>Python</code>, <code>Bash</code>)',
+					s2c_profil3:
+						"Wurm-Code in mehreren Sprachen (<code>JS</code>, <code>Python</code>, <code>Bash</code>)",
 					s2c_profil4: "Infrastruktur in Bulletproof-Hosting-Netzwerken (Osteuropa)",
 					s2c_profil5: "Hoch automatisierte Repo-Erstellung & Package-Publishing-Pipelines",
 					s2c_motiv_title: "Motivation",
@@ -2105,22 +2360,31 @@
 					s3_kc1_title: "Initial Access",
 					s3_kc1_desc: "Phishing → Maintainer-Account kompromittiert, NPM-Token gestohlen",
 					s3_kc2_title: "Execution",
-					s3_kc2_desc: 'Schadcode in <code>postinstall</code>-Hook injiziert; führt bei <code>npm install</code> automatisch aus',
+					s3_kc2_desc:
+						"Schadcode in <code>postinstall</code>-Hook injiziert; führt bei <code>npm install</code> automatisch aus",
 					s3_kc3_title: "Persistence",
-					s3_kc3_desc: 'Der Wurm schreibt eine eigene Publish-Routine in <code>package.json</code>; <code>prepare</code>-Script infiziert Dependencies',
+					s3_kc3_desc:
+						"Der Wurm schreibt eine eigene Publish-Routine in <code>package.json</code>; <code>prepare</code>-Script infiziert Dependencies",
 					s3_kc4_title: "Credential Access",
-					s3_kc4_desc: 'List <code>~/.npmrc</code>, <code>.env</code>, CI-Umgebungsvariablen; exfiltriert via HTTPS-POST',
+					s3_kc4_desc:
+						"List <code>~/.npmrc</code>, <code>.env</code>, CI-Umgebungsvariablen; exfiltriert via HTTPS-POST",
 					s3_kc5_title: "Lateral Movement",
-					s3_kc5_desc: "Nutzt gestohlene Tokens, um weitere Pakete des Maintainers zu modifizieren & re-publishen",
+					s3_kc5_desc:
+						"Nutzt gestohlene Tokens, um weitere Pakete des Maintainers zu modifizieren & re-publishen",
 					s3_kc6_title: "Impact",
 					s3_kc6_desc: "Backdoor-Payload in gezielten Paketen; Data Exfiltration aus CI/CD-Systemen",
 					s3b_title: "Runtime Behavior – Technische Details",
 					s3b_h3: "Analyse der Schadpakete (Kodem / Wiz)",
-					s3b_li1: 'Malicious Logic in <strong style="color:#0f0f23">Lifecycle Hooks</strong>: <code>install</code>, <code>postinstall</code>, <code>prepare</code>, <code>prepublish</code>',
-					s3b_li2: 'Skripte enumerieren <strong style="color:#0f0f23">alle Umgebungsvariablen</strong> und extrahieren CI-Service-Tokens, Cloud-Credentials und Package-Manager-Tokens',
-					s3b_li3: '<strong style="color:#0f0f23">Secondary Payloads</strong>: Mehrere Samples laden nach der Erstinfektion weitere Schadsoftware über HTTP nach',
-					s3b_li4: '<strong style="color:#0f0f23">Obfuskation</strong>: Base64-Encoding, String-Splitting, minimale XOR-Operationen',
-					s3b_li5: 'Bei gefundenen Tokens: <strong style="color:#f97316">Re-Publish</strong> tamperierter Versionen unter dem NPM-Profil des Opfers',
+					s3b_li1:
+						'Malicious Logic in <strong style="color:#0f0f23">Lifecycle Hooks</strong>: <code>install</code>, <code>postinstall</code>, <code>prepare</code>, <code>prepublish</code>',
+					s3b_li2:
+						'Skripte enumerieren <strong style="color:#0f0f23">alle Umgebungsvariablen</strong> und extrahieren CI-Service-Tokens, Cloud-Credentials und Package-Manager-Tokens',
+					s3b_li3:
+						'<strong style="color:#0f0f23">Secondary Payloads</strong>: Mehrere Samples laden nach der Erstinfektion weitere Schadsoftware über HTTP nach',
+					s3b_li4:
+						'<strong style="color:#0f0f23">Obfuskation</strong>: Base64-Encoding, String-Splitting, minimale XOR-Operationen',
+					s3b_li5:
+						'Bei gefundenen Tokens: <strong style="color:#f97316">Re-Publish</strong> tamperierter Versionen unter dem NPM-Profil des Opfers',
 					s3b_sign_label: "Häufige Script-Signaturen",
 					s3b_obfus_label: "Obfuskationstechniken",
 					s3b_obfus1: "Base64-Encoded Payloads",
@@ -2130,12 +2394,16 @@
 					s3b_obfus5: "Verschachtelte <code>eval()</code>-Aufrufe",
 					s3c_title: "Selbstreplikation im Detail",
 					s3c_h3: "Der Infektionsalgorithmus",
-					s3c_li1: 'Der Wurm iteriert über alle <code>dependencies</code> & <code>devDependencies</code> in <code>package.json</code>',
-					s3c_li2: 'Prüft, ob das <code>node_modules/</code>-Verzeichnis des jeweiligen Pakets beschreibbar ist',
-					s3c_li3: 'Injiziert den Schadcode in <code>scripts.postinstall</code> des Ziel-Pakets und passt <code>version</code> an',
-					s3c_li4: 'Führt <code>npm publish</code> mit dem gestohlenen NPM-Token aus',
+					s3c_li1:
+						"Der Wurm iteriert über alle <code>dependencies</code> & <code>devDependencies</code> in <code>package.json</code>",
+					s3c_li2:
+						"Prüft, ob das <code>node_modules/</code>-Verzeichnis des jeweiligen Pakets beschreibbar ist",
+					s3c_li3:
+						"Injiziert den Schadcode in <code>scripts.postinstall</code> des Ziel-Pakets und passt <code>version</code> an",
+					s3c_li4: "Führt <code>npm publish</code> mit dem gestohlenen NPM-Token aus",
 					s3c_marker_title: "Marker-Flag",
-					s3c_marker_desc: 'Unsichtbarer Marker (z.B. <code>__worm</code>-Feld) in <code>package.json</code>, um bereits infizierte Pakete zu überspringen.',
+					s3c_marker_desc:
+						"Unsichtbarer Marker (z.B. <code>__worm</code>-Feld) in <code>package.json</code>, um bereits infizierte Pakete zu überspringen.",
 					s3c_timeout_title: "Timeout-Mechanismus",
 					s3c_timeout_desc: "Zufälliger Delay (30–300s) pro Paket, um DDoS-Erkennung zu vermeiden.",
 					s3d_title: "Angriffsfluss – Visualisierung",
@@ -2175,17 +2443,17 @@
 					s4b_infra2: "GitLab CI – 47k kompromittierte Pipelines",
 					s4b_infra3: "AWS CodePipeline – Credentials gestohlen",
 					s4b_less: "Weniger betroffen",
-					s4b_less1: 'Projekte mit <code>--ignore-scripts</code> Flag',
+					s4b_less1: "Projekte mit <code>--ignore-scripts</code> Flag",
 					s4b_less2: "Air-gapped Umgebungen",
 					s4b_less3: "Yarn Berry (PnP-Modus)",
 					s4c_title: "Indicators of Compromise (IoCs)",
 					s4c_net_title: "Netzwerk-Endpunkte",
 					s4c_c2_label: "C2-Domains (Kodem)",
 					s4c_exfil_label: "Exfiltration-Pfade",
-					s4c_exfil1: 'HTTPS-POST an <code>/collect</code>',
+					s4c_exfil1: "HTTPS-POST an <code>/collect</code>",
 					s4c_exfil2: "Egress auf Port 8443, 9443",
 					s4c_exfil3: "DNS-Auflösungen Bulletproof-Hosting",
-					s4c_exfil4: '<code>curl -X POST</code> mit JSON-Body',
+					s4c_exfil4: "<code>curl -X POST</code> mit JSON-Body",
 					s4c_fs_title: "Dateisystem-Indikatoren",
 					s4c_fnames_label: "Beobachtete Dateinamen",
 					s4c_detect_label: "Erkennungsmethoden",
@@ -2196,18 +2464,23 @@
 					s4d_title: "Versioning Signals – Erkennung manipulierte Pakete",
 					s4d_sub: "Kompromittierte Pakete hinterlassen charakteristische Spuren im Versionsverlauf",
 					s4d_warn_label: "Warnsignale",
-					s4d_warn1: '<strong style="color:#0f0f23">Unerwartete Patch-Bumps</strong> – neue Versionen ohne korrespondierende Code-Änderungen im Changelog',
-					s4d_warn2: '<strong style="color:#0f0f23">Fehlende Git-Tags</strong> – published Version hat keinen entsprechenden Release-Tag',
-					s4d_warn3: '<strong style="color:#0f0f23">GitHub/NPM-Mismatch</strong> – Tarball auf NPM unterscheidet sich vom GitHub-Source-Code',
-					s4d_warn4: '<strong style="color:#0f0f23">Inkonsistente Maintainer-Aktivität</strong> – Publish-Zeitpunkt passt nicht zur GitHub-Historie',
+					s4d_warn1:
+						'<strong style="color:#0f0f23">Unerwartete Patch-Bumps</strong> – neue Versionen ohne korrespondierende Code-Änderungen im Changelog',
+					s4d_warn2:
+						'<strong style="color:#0f0f23">Fehlende Git-Tags</strong> – published Version hat keinen entsprechenden Release-Tag',
+					s4d_warn3:
+						'<strong style="color:#0f0f23">GitHub/NPM-Mismatch</strong> – Tarball auf NPM unterscheidet sich vom GitHub-Source-Code',
+					s4d_warn4:
+						'<strong style="color:#0f0f23">Inkonsistente Maintainer-Aktivität</strong> – Publish-Zeitpunkt passt nicht zur GitHub-Historie',
 					s4d_check_label: "Prüfmethoden",
-					s4d_check1: '<code>npm diff</code> – Code-Unterschiede analysieren',
-					s4d_check2: '<code>npm audit</code> – bekannte Schwachstellen prüfen',
-					s4d_check3: '<code>socket.dev</code> – Runtime-Verhalten analysieren',
-					s4d_check4: '<code>sigstore/cosign</code> – Paket-Signaturen verifizieren',
+					s4d_check1: "<code>npm diff</code> – Code-Unterschiede analysieren",
+					s4d_check2: "<code>npm audit</code> – bekannte Schwachstellen prüfen",
+					s4d_check3: "<code>socket.dev</code> – Runtime-Verhalten analysieren",
+					s4d_check4: "<code>sigstore/cosign</code> – Paket-Signaturen verifizieren",
 					s4d_check5: "Lockfile-Diffs im CI/CD Review",
 					s4d_bp_title: "Best Practice",
-					s4d_bp_desc: 'Lockfiles (<code>package-lock.json</code>, <code>yarn.lock</code>) immer versionieren und bei Code-Reviews auf unerwartete Patch-Versionen achten.',
+					s4d_bp_desc:
+						"Lockfiles (<code>package-lock.json</code>, <code>yarn.lock</code>) immer versionieren und bei Code-Reviews auf unerwartete Patch-Versionen achten.",
 					s5_title: "Gegenmaßnahmen",
 					s5_h3: "Sofortmaßnahmen (NPM / GitHub)",
 					s5_tl1_title: "Takedown & Depublizierung",
@@ -2223,33 +2496,38 @@
 					s5b_step1_title: "Dependency-Manifeste prüfen",
 					s5b_step1_desc: "Betroffene Versionen identifizieren, Lockfiles auf manipulierte Einträge scannen",
 					s5b_step2_title: "Secrets rotieren",
-					s5b_step2_desc: "Bei Kontakt mit infizierten Paketen: alle Tokens, Keys und Passwörter sofort erneuern",
+					s5b_step2_desc:
+						"Bei Kontakt mit infizierten Paketen: alle Tokens, Keys und Passwörter sofort erneuern",
 					s5b_step3_title: "Trusted Versions pinnen",
-					s5b_step3_desc: 'Lockfiles versionieren, Integritäts-Checks via <code>npm audit</code> erzwingen',
+					s5b_step3_desc: "Lockfiles versionieren, Integritäts-Checks via <code>npm audit</code> erzwingen",
 					s5b_step4_title: "Malicious Packages blocken",
 					s5b_step4_desc: "Regelwerke in der Registry für neu entdeckte Schadpakete aktualisieren",
 					s5b_step5_title: "Suspicious Behavior monitoren",
 					s5b_step5_desc: "Unerwartete Outbound-Requests, modifizierte Build-Skripte, Credential-Anomalien",
 					s5c_title: "Prävention – Entwickler & Organisationen",
 					s5c_dev_title: "Für Entwickler",
-					s5c_dev1: '<code>npm ci --ignore-scripts</code> in CI/CD',
-					s5c_dev2: '<strong style="color:#0f0f23">Granulare Tokens</strong> mit minimalem Scope (Publish-Only)',
-					s5c_dev3: 'Package-Lock prüfen (<code>npm audit</code>, <code>socket.dev</code>)',
+					s5c_dev1: "<code>npm ci --ignore-scripts</code> in CI/CD",
+					s5c_dev2:
+						'<strong style="color:#0f0f23">Granulare Tokens</strong> mit minimalem Scope (Publish-Only)',
+					s5c_dev3: "Package-Lock prüfen (<code>npm audit</code>, <code>socket.dev</code>)",
 					s5c_dev4: "2FA für NPM-Accounts erzwingen",
 					s5c_dev5: "Versions-Pinning statt Range-Dependencies",
 					s5c_org_title: "Für Organisationen",
-					s5c_org1: '<strong style="color:#0f0f23">Private Registry</strong> (Verdaccio, Artifactory) mit Allowlist',
+					s5c_org1:
+						'<strong style="color:#0f0f23">Private Registry</strong> (Verdaccio, Artifactory) mit Allowlist',
 					s5c_org2: "SBOM (Software Bill of Materials) für alle Builds",
 					s5c_org3: "Secrets in CI/CD nicht als Env-Vars – nutze Vaults",
 					s5c_org4: "Network-Egress aus Build-Containern blockieren",
 					s5c_org5: "Supply-Chain-Scans in Pre-Commit-Hooks integrieren",
 					s5c_tools_title: "Tool-Empfehlungen",
-					s5c_tools_desc: '<code>socket.dev</code> · <code>snyk</code> · <code>npm audit</code> · <code>sigstore/cosign</code> (Paket-Signierung) · <code>npm diff</code>',
+					s5c_tools_desc:
+						"<code>socket.dev</code> · <code>snyk</code> · <code>npm audit</code> · <code>sigstore/cosign</code> (Paket-Signierung) · <code>npm diff</code>",
 					s5d_title: "NPM-Ökosystem – Post-Incident Changes",
 					s5d_tl1_title: "Rate-Limiting für Publish-API",
 					s5d_tl1_desc: "Max. 10 Publishes/Stunde/Account; vertrauenswürdige Maintainer können Limit erhöhen",
 					s5d_tl2_title: "Automatische Script-Inspektion",
-					s5d_tl2_desc: "Neue Pakete mit postinstall/prepare-Skripten werden vor Publikation statisch analysiert",
+					s5d_tl2_desc:
+						"Neue Pakete mit postinstall/prepare-Skripten werden vor Publikation statisch analysiert",
 					s5d_tl3_title: "NPM Trust & Signing",
 					s5d_tl3_desc: "Package-Signing mit Sigstore/cosign für neue Major-Versionen; Verified-Badge",
 					s5d_tl4_title: "Registry Watch & ML-Detection",
@@ -2257,12 +2535,13 @@
 					s5d_tl5_title: "Sandboxed Lifecycle Scripts (RFC)",
 					s5d_tl5_desc: "Vorschlag für containerisierte Ausführung von postinstall-Hooks (OpenJS Foundation)",
 					s5d_ind_title: "Branchenweite Reaktion",
-					s5d_ind_desc: 'GitHub: <code>dependency-review-action</code> v2 mit Worm-Detection. GitLab: NPM-Audit in CI/CD-Pipeline-Schutz integriert. OpenJS Foundation: Supply-Chain-Best-Practices für alle JavaScript-Package-Manager.',
+					s5d_ind_desc:
+						"GitHub: <code>dependency-review-action</code> v2 mit Worm-Detection. GitLab: NPM-Audit in CI/CD-Pipeline-Schutz integriert. OpenJS Foundation: Supply-Chain-Best-Practices für alle JavaScript-Package-Manager.",
 					s6_title: "Lessons Learned",
 					s6_l1_title: "Least Privilege",
 					s6_l1_desc: "Tokens & Credentials mit minimalem Scope – Publish ≠ Admin",
 					s6_l2_title: "Disable Scripts",
-					s6_l2_desc: '<code>--ignore-scripts</code> als Standard in CI/CD',
+					s6_l2_desc: "<code>--ignore-scripts</code> als Standard in CI/CD",
 					s6_l3_title: "Verify & Audit",
 					s6_l3_desc: "Paket-Hashes, SBOMs, Supply-Chain-Scans als Pflichtschritt",
 					s6_l4_title: "Network Isolation",
