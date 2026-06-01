@@ -1665,28 +1665,91 @@
 				<!-- ═══════════════════════════════════════════
 				     Q&A
 				═══════════════════════════════════════════ -->
-				<section class="title-slide">
-					<div class="badge badge-orange" style="margin-bottom: 1rem" data-i18n="qa_badge">Ende des Vortrags</div>
-					<h1 style="font-size: 2.8rem; margin-bottom: 0" data-i18n="qa_title">Fragen?</h1>
-					<div class="outro-line"></div>
-					<p class="subtitle" style="max-width: 28rem; line-height: 1.6" data-i18n="qa_sub">
-						Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />
-						CVSS 9.3 Critical · 26k+ GitHub-Repos
-					</p>
+				<section>
+					<section class="title-slide">
+						<div class="badge badge-orange" style="margin-bottom: 1rem" data-i18n="qa_badge">Ende des Vortrags</div>
+						<h1 style="font-size: 2.8rem; margin-bottom: 0" data-i18n="qa_title">Fragen?</h1>
+						<div class="outro-line"></div>
+						<p class="subtitle" style="max-width: 28rem; line-height: 1.6" data-i18n="qa_sub">
+							Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />
+							CVSS 9.3 Critical · 26k+ GitHub-Repos
+						</p>
 
-					<div class="badge-group" style="margin-top: 1.5rem">
-						<span class="badge badge-orange">Supply Chain</span>
-						<span class="badge badge-red">CVSS 9.3</span>
-						<span class="badge badge-blue">NPM</span>
-						<span class="badge badge-yellow">postinstall</span>
-						<span class="badge badge-green">--ignore-scripts</span>
-					</div>
+						<div class="badge-group" style="margin-top: 1.5rem">
+							<span class="badge badge-orange">Supply Chain</span>
+							<span class="badge badge-red">CVSS 9.3</span>
+							<span class="badge badge-blue">NPM</span>
+							<span class="badge badge-yellow">postinstall</span>
+							<span class="badge badge-green">--ignore-scripts</span>
+						</div>
 
-					<aside class="notes">
-						Danke für die Aufmerksamkeit. Zeit für Fragen. Mögliche Fragen: Warum war kein Signierungszwang
-						da? Hat NPM sich seitdem geändert? Wie kann ich prüfen ob mein Projekt betroffen war? Quellen:
-						Wiz Research, Aikido Security, Kodem Security Research.
-					</aside>
+						<aside class="notes">
+							Danke für die Aufmerksamkeit. Zeit für Fragen. Mögliche Fragen: Warum war kein Signierungszwang
+							da? Hat NPM sich seitdem geändert? Wie kann ich prüfen ob mein Projekt betroffen war?
+							Im Anschluss gibt es eine Folie mit Quellen.
+						</aside>
+					</section>
+
+					<section>
+						<h2 data-i18n="src_title">Quellen / Sources</h2>
+						<div class="hdivider"></div>
+
+						<div style="font-size: 0.64rem; display: flex; flex-direction: column; gap: 0.35rem">
+							<div class="card card-row" style="padding: 0.35rem 0.7rem">
+								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">1</span>
+								<div>
+									<div style="font-weight: 600; color: #0f0f23">Wiz Research</div>
+									<div style="color: #64748b" data-i18n="src_1">Shai-Hulud: Ongoing Package Supply Chain Worm (Sep 2025)</div>
+								</div>
+							</div>
+							<div class="card card-row" style="padding: 0.35rem 0.7rem">
+								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">2</span>
+								<div>
+									<div style="font-weight: 600; color: #0f0f23">Unit 42 (Palo Alto Networks)</div>
+									<div style="color: #64748b" data-i18n="src_2">"Shai-Hulud" Worm Compromises npm Ecosystem (Nov 2025)</div>
+								</div>
+							</div>
+							<div class="card card-row" style="padding: 0.35rem 0.7rem">
+								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">3</span>
+								<div>
+									<div style="font-weight: 600; color: #0f0f23">Kaspersky Securelist</div>
+									<div style="color: #64748b" data-i18n="src_3">Shai-Hulud worm infects npm packages (Sep 2025) / Nothing to steal? Let's wipe. (Dez 2025)</div>
+								</div>
+							</div>
+							<div class="card card-row" style="padding: 0.35rem 0.7rem">
+								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">4</span>
+								<div>
+									<div style="font-weight: 600; color: #0f0f23">Microsoft Security Blog</div>
+									<div style="color: #64748b" data-i18n="src_4">Shai-Hulud 2.0: Guidance for Detecting, Investigating, and Defending (Dez 2025)</div>
+								</div>
+							</div>
+							<div class="card card-row" style="padding: 0.35rem 0.7rem">
+								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">5</span>
+								<div>
+									<div style="font-weight: 600; color: #0f0f23">GitHub Blog</div>
+									<div style="color: #64748b" data-i18n="src_5">Our Plan for a More Secure npm Supply Chain (Sep 2025)</div>
+								</div>
+							</div>
+							<div class="card card-row" style="padding: 0.35rem 0.7rem">
+								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">6</span>
+								<div>
+									<div style="font-weight: 600; color: #0f0f23">MITRE ATT&CK</div>
+									<div style="color: #64748b" data-i18n="src_6">Shai-Hulud, Software S9008</div>
+								</div>
+							</div>
+							<div class="card card-row" style="padding: 0.35rem 0.7rem">
+								<span style="font-size: 0.65rem; font-weight: 700; min-width: 1.4rem; color: #ea580c; flex-shrink: 0">7</span>
+								<div>
+									<div style="font-weight: 600; color: #0f0f23">Trend Micro</div>
+									<div style="color: #64748b" data-i18n="src_7">What We Know About the NPM Supply Chain Attack (Sep 2025)</div>
+								</div>
+							</div>
+						</div>
+
+						<aside class="notes">
+							Vollständige Quellenliste: Alle Berichte sind online verfügbar und wurden für die Erstellung dieser Präsentation verwendet.
+						</aside>
+					</section>
 				</section>
 			</div>
 		</div>
@@ -1960,6 +2023,14 @@
 					qa_badge: "End of Presentation",
 					qa_title: "Questions?",
 					qa_sub: "Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />CVSS 9.3 Critical · 26k+ GitHub-Repos",
+					src_title: "Sources",
+					src_1: "Wiz Research – Shai-Hulud: Ongoing Package Supply Chain Worm (Sep 2025)",
+					src_2: 'Unit 42 – "Shai-Hulud" Worm Compromises npm Ecosystem (Nov 2025)',
+					src_3: "Kaspersky Securelist – Shai-Hulud worm infects npm packages / Nothing to steal? Let's wipe. (Sep/Dez 2025)",
+					src_4: "Microsoft Security Blog – Shai-Hulud 2.0: Guidance for Detecting, Investigating, and Defending (Dez 2025)",
+					src_5: "GitHub Blog – Our Plan for a More Secure npm Supply Chain (Sep 2025)",
+					src_6: "MITRE ATT&CK – Shai-Hulud, Software S9008",
+					src_7: "Trend Micro – What We Know About the NPM Supply Chain Attack (Sep 2025)",
 				},
 				de: {
 					t_badge1: "Supply-Chain-Angriff",
@@ -2208,6 +2279,14 @@
 					qa_badge: "Ende des Vortrags",
 					qa_title: "Fragen?",
 					qa_sub: "Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />CVSS 9.3 Critical · 26k+ GitHub-Repos",
+					src_title: "Quellen",
+					src_1: "Wiz Research – Shai-Hulud: Ongoing Package Supply Chain Worm (Sep 2025)",
+					src_2: 'Unit 42 – "Shai-Hulud" Worm Compromises npm Ecosystem (Nov 2025)',
+					src_3: "Kaspersky Securelist – Shai-Hulud worm infects npm packages / Nothing to steal? Let's wipe. (Sep/Dez 2025)",
+					src_4: "Microsoft Security Blog – Shai-Hulud 2.0: Guidance for Detecting, Investigating, and Defending (Dez 2025)",
+					src_5: "GitHub Blog – Our Plan for a More Secure npm Supply Chain (Sep 2025)",
+					src_6: "MITRE ATT&CK – Shai-Hulud, Software S9008",
+					src_7: "Trend Micro – What We Know About the NPM Supply Chain Attack (Sep 2025)",
 				},
 			};
 
