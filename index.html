@@ -576,7 +576,7 @@
 					<aside class="notes">
 						Willkommen. Heute sprechen wir über Shai-Hulud 2.0 – benannt nach dem Sandwurm aus Dune – einen
 						selbstreplizierenden Wurm, der im November 2025 das NPM-Ökosystem heimsuchte. Wir decken den
-						vollen Angriffsablauf ab, von der Infektion bis zu den Gegenmassnahmen.
+						vollen Angriffsablauf ab, von der Infektion bis zu den Gegenmaßnahmen.
 					</aside>
 				</section>
 
@@ -692,7 +692,7 @@
 								<div class="stat-label" data-i18n="s1b_stat2">aktive NPM-Nutzer</div>
 							</div>
 							<div class="stat-box">
-								<div class="stat-num accent-red">890k+</div>
+								<div class="stat-num accent-red">1.100+</div>
 								<div class="stat-label" data-i18n="s1b_stat3">betroffene Pakete (Nov 2025)</div>
 							</div>
 						</div>
@@ -743,14 +743,14 @@
 							</div>
 							<div class="timeline-item">
 								<span class="tl-date">3. Nov 2025 · 02:14 UTC</span>
-								<div class="tl-title" data-i18n="s2_tl2_title">Zweitinfektion: <code>color-schema-utils</code> v3.4.1</div>
-								<div class="tl-desc" data-i18n="s2_tl2_desc">Populäres UI-Hilfspaket, ~140k wöchentliche Downloads</div>
+								<div class="tl-title" data-i18n="s2_tl2_title">Zweitinfektion: <code>@ctrl/tinycolor</code> v3.4.1</div>
+								<div class="tl-desc" data-i18n="s2_tl2_desc">Populäres UI-Hilfspaket, ~2 Mio. wöchentliche Downloads</div>
 							</div>
 							<div class="timeline-item">
 								<span class="tl-date">3. Nov – 6. Nov</span>
 								<div class="tl-title" data-i18n="s2_tl3_title">Exponentielle Verbreitung</div>
 								<div class="tl-desc" data-i18n="s2_tl3_desc">
-									Über 890.000 Pakete infiziert; Wurm publiziert neue Versionen via gestohlener Tokens
+									Über 1.100 Pakete infiziert; Wurm publiziert neue Versionen via gestohlener Tokens
 								</div>
 							</div>
 							<div class="timeline-item">
@@ -1070,7 +1070,7 @@
 								<div class="card-orange flow-card">
 									<div class="flow-card-label" data-i18n="s3d_infected">Infiziertes Paket</div>
 									<div class="flow-card-value" style="color: #f97316">
-										<code>color-schema-utils</code>
+										<code>@ctrl/tinycolor</code>
 									</div>
 								</div>
 							</div>
@@ -1129,12 +1129,12 @@
 
 						<div class="grid-3" style="margin-bottom: 1rem">
 							<div class="stat-box">
-								<div class="stat-num accent-red">890k+</div>
+								<div class="stat-num accent-red">1.100+</div>
 								<div class="stat-label" data-i18n="s4_stat1">Pakete kompromittiert</div>
 							</div>
 							<div class="stat-box">
-								<div class="stat-num accent">~350k</div>
-								<div class="stat-label" data-i18n="s4_stat2">exfiltrierte NPM-Tokens</div>
+								<div class="stat-num accent">~350</div>
+								<div class="stat-label" data-i18n="s4_stat2">kompromittierte Accounts</div>
 							</div>
 							<div class="stat-box">
 								<div class="stat-num" style="color: #facc15">26k+</div>
@@ -1222,7 +1222,7 @@
 						</div>
 
 						<aside class="notes">
-							Besonders interessant: Projekte, die ignorescripts in der .npmrc hatten, waren immune. Das
+							Besonders interessant: Projekte, die ignorescripts in der .npmrc hatten, waren immun. Das
 							war einer der wichtigsten Findings für die Lessons Learned.
 						</aside>
 					</section>
@@ -1357,7 +1357,7 @@
 						<div class="timeline" style="margin-bottom: 0.8rem">
 							<div class="timeline-item">
 								<div class="tl-title" data-i18n="s5_tl1_title">Takedown &amp; Depublizierung</div>
-								<div class="tl-desc" data-i18n="s5_tl1_desc">890k+ Pakete gesperrt; Daten aus CDN-Cache invalidiert</div>
+								<div class="tl-desc" data-i18n="s5_tl1_desc">1.100+ Pakete gesperrt; Daten aus CDN-Cache invalidiert</div>
 							</div>
 							<div class="timeline-item">
 								<div class="tl-title" data-i18n="s5_tl2_title">Token-Revokation</div>
@@ -1461,7 +1461,7 @@
 								<h3 style="margin-bottom: 0.6rem; font-size: 1rem" data-i18n="s5c_org_title">Für Organisationen</h3>
 								<ul>
 									<li data-i18n="s5c_org1">
-										<strong style="color: #0f0f23">Private Registry</strong> (Verdana, Artifactory)
+										<strong style="color: #0f0f23">Private Registry</strong> (Verdaccio, Artifactory)
 										mit Allowlist
 									</li>
 									<li data-i18n="s5c_org2">SBOM (Software Bill of Materials) für alle Builds</li>
@@ -1671,7 +1671,7 @@
 					<div class="outro-line"></div>
 					<p class="subtitle" style="max-width: 28rem; line-height: 1.6" data-i18n="qa_sub">
 						Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />
-						CVE-2025-5178 · CVSS 9.3 Critical · 26k+ GitHub-Repos
+						CVSS 9.3 Critical · 26k+ GitHub-Repos
 					</p>
 
 					<div class="badge-group" style="margin-top: 1.5rem">
@@ -1751,10 +1751,10 @@
 					s2_h3: "The Specific Incident",
 					s2_tl1_title: "First Shai-Hulud wave discovered",
 					s2_tl1_desc: "Initial self-replicating worm in the NPM ecosystem",
-					s2_tl2_title: 'Second infection: <code>color-schema-utils</code> v3.4.1',
-					s2_tl2_desc: "Popular UI helper package, ~140k weekly downloads",
+					s2_tl2_title: 'Second infection: <code>@ctrl/tinycolor</code> v3.4.1',
+					s2_tl2_desc: "Popular UI helper package, ~2M weekly downloads",
 					s2_tl3_title: "Exponential spread",
-					s2_tl3_desc: "Over 890,000 packages infected; worm publishes new versions via stolen tokens",
+					s2_tl3_desc: "Over 1,100 packages infected; worm publishes new versions via stolen tokens",
 					s2_tl4_title: "Shai-Hulud 2.0 confirmed",
 					s2_tl4_desc: "Aikido Security & Wiz Research publish details: 26,000+ GitHub repos created",
 					s2b_title: "Affected Companies & Packages",
@@ -1829,7 +1829,7 @@
 					s3d_cycle: "∞ Self-replicating cycle",
 					s4_title: "Impact & Damage",
 					s4_stat1: "Packages compromised",
-					s4_stat2: "Exfiltrated NPM tokens",
+					s4_stat2: "Compromised accounts",
 					s4_stat3: "GitHub repos created",
 					s4_tech_title: "Technical",
 					s4_tech1: "NPM tokens, GitHub PATs, AWS keys stolen",
@@ -1892,7 +1892,7 @@
 					s5_title: "Countermeasures",
 					s5_h3: "Immediate Actions (NPM / GitHub)",
 					s5_tl1_title: "Takedown & Depublishing",
-					s5_tl1_desc: "890k+ packages blocked; data invalidated from CDN cache",
+					s5_tl1_desc: "1.100+ packages blocked; data invalidated from CDN cache",
 					s5_tl2_title: "Token Revocation",
 					s5_tl2_desc: "All NPM tokens from the last 72h automatically invalidated; forced rotation",
 					s5_tl3_title: "CVE Publication & Advisory",
@@ -1959,7 +1959,7 @@
 					s6b_f4: '<strong style="color:#0f0f23">Open source is not a security guarantee.</strong> Popularity ≠ trustworthiness. Every external dependency is a potential attack surface.',
 					qa_badge: "End of Presentation",
 					qa_title: "Questions?",
-					qa_sub: "Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />CVE-2025-5178 · CVSS 9.3 Critical · 26k+ GitHub-Repos",
+					qa_sub: "Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />CVSS 9.3 Critical · 26k+ GitHub-Repos",
 				},
 				de: {
 					t_badge1: "Supply-Chain-Angriff",
@@ -1994,15 +1994,15 @@
 					s1b_li1: 'Supply-Chain-Angriffe sind 2024–2025 die <strong style="color:#0f0f23">am stärksten wachsende Bedrohungskategorie</strong>',
 					s1b_li2: 'Bekannte Vorfälle: <em>XZ-Utils Backdoor (2024)</em>, <em>event-stream (2018)</em>, <em>ua-parser-js (2021)</em>',
 					s1b_li3: 'Einmal infiziertes Paket <strong style="color:#0f0f23">vertrauenswürdig für alle Downstream-Projekte</strong>',
-					s1b_li4: 'Shai-Hulud 2.0 war der <strong style="color:#f97316">erste dokumentierte selbstreplizierte Wurm</strong> im NPM-Ökosystem',
+					s1b_li4: 'Shai-Hulud 2.0 war der <strong style="color:#f97316">erster dokumentierter selbstreplizierender Wurm</strong> im NPM-Ökosystem',
 					s2_title: "Kontext des Angriffs",
 					s2_h3: "Der konkrete Fall",
 					s2_tl1_title: "Erste Shai-Hulud-Welle entdeckt",
 					s2_tl1_desc: "Initialer selbstreplizierender Wurm im NPM-Ökosystem",
-					s2_tl2_title: 'Zweitinfektion: <code>color-schema-utils</code> v3.4.1',
-					s2_tl2_desc: "Populäres UI-Hilfspaket, ~140k wöchentliche Downloads",
+					s2_tl2_title: 'Zweitinfektion: <code>@ctrl/tinycolor</code> v3.4.1',
+					s2_tl2_desc: "Populäres UI-Hilfspaket, ~2 Mio. wöchentliche Downloads",
 					s2_tl3_title: "Exponentielle Verbreitung",
-					s2_tl3_desc: "Über 890.000 Pakete infiziert; Wurm publiziert neue Versionen via gestohlener Tokens",
+					s2_tl3_desc: "Über 1.100 Pakete infiziert; Wurm publiziert neue Versionen via gestohlener Tokens",
 					s2_tl4_title: "Shai-Hulud 2.0 bestätigt",
 					s2_tl4_desc: "Aikido Security & Wiz Research veröffentlichen Details: 26.000+ GitHub-Repos erstellt",
 					s2b_title: "Betroffene Unternehmen & Pakete",
@@ -2036,7 +2036,7 @@
 					s3_kc2_title: "Execution",
 					s3_kc2_desc: 'Schadcode in <code>postinstall</code>-Hook injiziert; führt bei <code>npm install</code> automatisch aus',
 					s3_kc3_title: "Persistence",
-					s3_kc3_desc: 'Würmer schreiben eigene Publish-Routine in <code>package.json</code>; <code>prepare</code>-Script infiziert Dependencies',
+					s3_kc3_desc: 'Der Wurm schreibt eine eigene Publish-Routine in <code>package.json</code>; <code>prepare</code>-Script infiziert Dependencies',
 					s3_kc4_title: "Credential Access",
 					s3_kc4_desc: 'List <code>~/.npmrc</code>, <code>.env</code>, CI-Umgebungsvariablen; exfiltriert via HTTPS-POST',
 					s3_kc5_title: "Lateral Movement",
@@ -2077,7 +2077,7 @@
 					s3d_cycle: "∞ Selbstreplizierender Zyklus",
 					s4_title: "Auswirkungen & Schäden",
 					s4_stat1: "Pakete kompromittiert",
-					s4_stat2: "exfiltrierte NPM-Tokens",
+					s4_stat2: "kompromittierte Accounts",
 					s4_stat3: "GitHub-Repos erstellt",
 					s4_tech_title: "Technisch",
 					s4_tech1: "NPM-Tokens, GitHub PATs, AWS-Keys gestohlen",
@@ -2140,7 +2140,7 @@
 					s5_title: "Gegenmaßnahmen",
 					s5_h3: "Sofortmaßnahmen (NPM / GitHub)",
 					s5_tl1_title: "Takedown & Depublizierung",
-					s5_tl1_desc: "890k+ Pakete gesperrt; Daten aus CDN-Cache invalidiert",
+					s5_tl1_desc: "1.100+ Pakete gesperrt; Daten aus CDN-Cache invalidiert",
 					s5_tl2_title: "Token-Revokation",
 					s5_tl2_desc: "Alle NPM-Tokens der letzten 72h automatisch invalidiert; Zwangs-Rotation",
 					s5_tl3_title: "CVE-Veröffentlichung & Advisory",
@@ -2167,7 +2167,7 @@
 					s5c_dev4: "2FA für NPM-Accounts erzwingen",
 					s5c_dev5: "Versions-Pinning statt Range-Dependencies",
 					s5c_org_title: "Für Organisationen",
-					s5c_org1: '<strong style="color:#0f0f23">Private Registry</strong> (Verdana, Artifactory) mit Allowlist',
+					s5c_org1: '<strong style="color:#0f0f23">Private Registry</strong> (Verdaccio, Artifactory) mit Allowlist',
 					s5c_org2: "SBOM (Software Bill of Materials) für alle Builds",
 					s5c_org3: "Secrets in CI/CD nicht als Env-Vars – nutze Vaults",
 					s5c_org4: "Network-Egress aus Build-Containern blockieren",
@@ -2207,7 +2207,7 @@
 					s6b_f4: '<strong style="color:#0f0f23">Open Source ist kein Sicherheitsversprechen.</strong> Popularität ≠ Vertrauenswürdigkeit. Jede externe Dependency ist eine potenzielle Angriffsfläche.',
 					qa_badge: "Ende des Vortrags",
 					qa_title: "Fragen?",
-					qa_sub: "Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />CVE-2025-5178 · CVSS 9.3 Critical · 26k+ GitHub-Repos",
+					qa_sub: "Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />CVSS 9.3 Critical · 26k+ GitHub-Repos",
 				},
 			};
 
