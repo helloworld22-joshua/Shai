@@ -574,7 +574,7 @@
 						>
 					</h1>
 					<div class="hdivider" style="width: 12rem"></div>
-					
+
 					<aside class="notes">
 						Willkommen. Heute sprechen wir über Shai-Hulud 2.0 – benannt nach dem Sandwurm aus Dune – einen
 						selbstreplizierenden Wurm, der im November 2025 das NPM-Ökosystem heimsuchte. Wir decken den
@@ -668,12 +668,10 @@
 							</li>
 						</ul>
 
-					
-
 						<aside class="notes">
 							Würmer sind seit Jahrzehnten bekannt. Das Neue hier ist das Ziel: nicht Server oder
-							Endgeräte, sondern das Vertrauensverhältnis zwischen Entwicklern und dem NPM-Repository.
-							 – kein Benutzerkonto erforderlich, netzwerkfähig, hohe Wirkung.
+							Endgeräte, sondern das Vertrauensverhältnis zwischen Entwicklern und dem NPM-Repository. –
+							kein Benutzerkonto erforderlich, netzwerkfähig, hohe Wirkung.
 						</aside>
 					</section>
 
@@ -692,7 +690,9 @@
 							</div>
 							<div class="stat-box">
 								<div class="stat-num accent-red">1.100+</div>
-								<div class="stat-label" data-i18n="s1b_stat3">betroffene Paket-Versionen (Nov 2025)</div>
+								<div class="stat-label" data-i18n="s1b_stat3">
+									betroffene Paket-Versionen (Nov 2025)
+								</div>
 							</div>
 						</div>
 
@@ -755,7 +755,8 @@
 								<span class="tl-date">3. Nov – 6. Nov</span>
 								<div class="tl-title" data-i18n="s2_tl3_title">Exponentielle Verbreitung</div>
 								<div class="tl-desc" data-i18n="s2_tl3_desc">
-									Über 1.100 Paket-Versionen infiziert; Wurm publiziert neue Versionen via gestohlener Tokens
+									Über 1.100 Paket-Versionen infiziert; Wurm publiziert neue Versionen via gestohlener
+									Tokens
 								</div>
 							</div>
 							<div class="timeline-item">
@@ -847,8 +848,9 @@
 								<h3 style="margin-bottom: 0.6rem" data-i18n="s2c_profil_title">Profil</h3>
 								<ul>
 									<li data-i18n="s2c_profil1">
-										<strong style="color: #0f0f23">Fortgeschrittene Bedrohungsgruppe - TeamPCP</strong>,
-										wahrscheinlich staatlich gesponsert oder organisierte Cyberkriminalität
+										<strong style="color: #0f0f23"
+											>Fortgeschrittene Bedrohungsgruppe - TeamPCP</strong
+										>, wahrscheinlich staatlich gesponsert oder organisierte Cyberkriminalität
 									</li>
 									<li data-i18n="s2c_profil2">
 										Tief gehende Kenntnisse der NPM-Internals und CI/CD-Workflows
@@ -1455,6 +1457,152 @@
 							nicht die Versionierungs-Metadaten. Gerade hier zeigen sich aber Manipulationen oft zuerst.
 						</aside>
 					</section>
+
+					<section>
+						<h2>Shai-Hulud Versionsvergleich</h2>
+						<div class="hdivider"></div>
+
+						<p class="subtitle" style="margin-bottom: 0.7rem">
+							Evolution der Angriffstechniken über drei Generationen
+						</p>
+
+						<div style="overflow-x: auto; font-size: 0.72rem">
+							<table style="width: 100%; border-collapse: collapse; line-height: 1.4">
+								<thead>
+									<tr>
+										<th
+											style="
+												padding: 0.45rem 0.6rem;
+												text-align: left;
+												border-bottom: 2px solid #38bdf8;
+												color: #38bdf8;
+												white-space: nowrap;
+											"
+										>
+											Funktion
+										</th>
+										<th
+											style="
+												padding: 0.45rem 0.6rem;
+												text-align: left;
+												border-bottom: 2px solid #38bdf8;
+												color: #a78bfa;
+												white-space: nowrap;
+											"
+										>
+											Shai-Hulud 1.0
+											<span style="font-weight: 400; color: #94a3b8">(Sept. 2025)</span>
+										</th>
+										<th
+											style="
+												padding: 0.45rem 0.6rem;
+												text-align: left;
+												border-bottom: 2px solid #38bdf8;
+												color: #f87171;
+												white-space: nowrap;
+											"
+										>
+											Shai-Hulud 2.0
+											<span style="font-weight: 400; color: #94a3b8">(Nov./Dez. 2025)</span>
+										</th>
+										<th
+											style="
+												padding: 0.45rem 0.6rem;
+												text-align: left;
+												border-bottom: 2px solid #38bdf8;
+												color: #fb923c;
+												white-space: nowrap;
+											"
+										>
+											Mini Shai-Hulud
+											<span style="font-weight: 400; color: #94a3b8">(Mai 2026)</span>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="border-bottom: 1px solid #1e293b">
+										<td style="padding: 0.4rem 0.6rem; color: #94a3b8; white-space: nowrap">
+											Gezielte Register
+										</td>
+										<td style="padding: 0.4rem 0.6rem">nur npm</td>
+										<td style="padding: 0.4rem 0.6rem">nur npm</td>
+										<td style="padding: 0.4rem 0.6rem">
+											<strong>npm &amp; PyPI</strong> (Ökosystemübergreifend)
+										</td>
+									</tr>
+									<tr style="border-bottom: 1px solid #1e293b; background: rgba(255, 255, 255, 0.02)">
+										<td style="padding: 0.4rem 0.6rem; color: #94a3b8; white-space: nowrap">
+											Ausführungsauslöser
+										</td>
+										<td style="padding: 0.4rem 0.6rem"><code>postinstall</code> script</td>
+										<td style="padding: 0.4rem 0.6rem"><code>preinstall</code> script (faster)</td>
+										<td style="padding: 0.4rem 0.6rem">
+											<code>preinstall</code> &amp; setup scripts
+										</td>
+									</tr>
+									<tr style="border-bottom: 1px solid #1e293b">
+										<td style="padding: 0.4rem 0.6rem; color: #94a3b8; white-space: nowrap">
+											Verwendete Laufzeit
+										</td>
+										<td style="padding: 0.4rem 0.6rem">Standard Node.js</td>
+										<td style="padding: 0.4rem 0.6rem">
+											<strong>Bun-Laufzeit</strong> (Stealth-Installationsprogramm)
+										</td>
+										<td style="padding: 0.4rem 0.6rem">Bun-Laufzeit- und Python-Skripte</td>
+									</tr>
+									<tr style="border-bottom: 1px solid #1e293b; background: rgba(255, 255, 255, 0.02)">
+										<td style="padding: 0.4rem 0.6rem; color: #94a3b8; white-space: nowrap">
+											Exfiltration Repo
+										</td>
+										<td style="padding: 0.4rem 0.6rem">
+											Hartcodiertes öffentliches Repo
+											<span style="color: #94a3b8">"Shai-Hulud"</span>
+										</td>
+										<td style="padding: 0.4rem 0.6rem">
+											<strong>Zufällige 18-stellige</strong> öffentliche Repo-Namen
+										</td>
+										<td style="padding: 0.4rem 0.6rem">
+											Zufällige Repo-Namen und verschiedene Webhooks
+										</td>
+									</tr>
+									<tr style="border-bottom: 1px solid #1e293b">
+										<td style="padding: 0.4rem 0.6rem; color: #94a3b8; white-space: nowrap">
+											Persistenzmethode
+										</td>
+										<td style="padding: 0.4rem 0.6rem">Einfache GitHub-Aktionsworkflows</td>
+										<td style="padding: 0.4rem 0.6rem">
+											<strong>Selbstgehosteter GitHub Actions Runner</strong> lokal installiert
+										</td>
+										<td style="padding: 0.4rem 0.6rem">
+											Multi-Vektor-Läufer und Backdoor-Workflows
+										</td>
+									</tr>
+									<tr style="background: rgba(255, 255, 255, 0.02)">
+										<td style="padding: 0.4rem 0.6rem; color: #94a3b8; white-space: nowrap">
+											Fallback-Verhalten
+										</td>
+										<td style="padding: 0.4rem 0.6rem; color: #94a3b8">
+											Keine (schleichend fehlgeschlagen)
+										</td>
+										<td style="padding: 0.4rem 0.6rem">
+											<strong style="color: #f87171">"Fail-Closed"-Zerstörung</strong> (Löscht
+											Home-Verzeichnis)
+										</td>
+										<td style="padding: 0.4rem 0.6rem">
+											<span style="color: #f87171">Löscht Home-Verzeichnis</span> + versucht
+											Cloud-Ressourcen zu löschen
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<aside class="notes">
+							Diese Tabelle zeigt die Evolution der Shai-Hulud-Malware-Familie über drei Generationen.
+							Besonders auffällig ist die Eskalation beim Fallback-Verhalten – von stillem Versagen über
+							destruktive Aktionen bis hin zu Cloud-Ressourcen-Löschung.
+						</aside>
+					</section>
 				</section>
 
 				<!-- ═══════════════════════════════════════════
@@ -1801,7 +1949,7 @@
 						<div class="outro-line"></div>
 						<p class="subtitle" style="max-width: 28rem; line-height: 1.6" data-i18n="qa_sub">
 							Shai-Hulud 2.0 · NPM Ecosystem Worm · November 2025<br />
-							 26k+ GitHub-Repos
+							26k+ GitHub-Repos
 						</p>
 
 						<div class="badge-group" style="margin-top: 1.5rem">
@@ -2312,7 +2460,8 @@
 					s2_tl2_title: "Zweitinfektion: <code>@ctrl/tinycolor</code> v3.4.1",
 					s2_tl2_desc: "Populäres UI-Hilfspaket, ~2 Mio. wöchentliche Downloads",
 					s2_tl3_title: "Exponentielle Verbreitung",
-					s2_tl3_desc: "Über 1.100 Paket-Versionen infiziert; Wurm publiziert neue Versionen via gestohlener Tokens",
+					s2_tl3_desc:
+						"Über 1.100 Paket-Versionen infiziert; Wurm publiziert neue Versionen via gestohlener Tokens",
 					s2_tl4_title: "Shai-Hulud 2.0 bestätigt",
 					s2_tl4_desc:
 						"Aikido Security & Wiz Research veröffentlichen Details: 26.000+ GitHub-Repos erstellt",
